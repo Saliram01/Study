@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClintX ClintY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .disboard {
+            background-color: #654f4f;
+            width: 150px;
+            height: 40px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>It work with document viewport area</h2>
+    <p class="disboard"></p>
+    <script>
+        let box = document.querySelector('.box');
+        let dispBoard = document.querySelector('.disboard');
+        document.addEventListener('mousemove',
+            function (e) {
+                let x = e.clientX;
+                let y = e.clientY;
+
+               let value =  document.body.style.backgroundColor = `rgb(${x},${y},${(x+y)/10})`;
+               console.log(value);
+
+               dispBoard.innerHTML = `R-${x} || G-${y} || B-${(x+y)/10}`;
+            })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimmerEffect</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #818181;
+            padding: 25px;
+        }
+        .skeleton {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;*/
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 25px;
+        }
+
+        .box {
+            max-width: 345px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: turquoise;
+        }
+        
+        img {
+            height: 110px;
+        }
+
+        h2 {
+            background-color: rgb(118, 136, 151);
+            width: 80%;
+            height: 30px;
+            margin: 6px 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        p {
+            width: 50%;
+            height: 30px;
+            background-color: steelblue;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="skeleton">
+        
+    </div>
+    <script>
+        Array.from({length : 48}).map((el,i) => {
+            const card = $('<div>');
+                $(card).addClass('box');
+                $('.skeleton').append(card);
+
+            const img = $('<img>');
+                $(card).append(img)
+             
+            const h2 = $('<h2>');
+                $(card).append(h2)
+
+            const p = $('<p>');
+                $(card).append(p);
+            
+        })
+    </script>
+</body>
+</html>
