@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIFE</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        h2{
+            background-color: #6f6565;
+            width: 80%;
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h2>An IIFE (Immediately Invoked Function Expression) is a function of javaScript that runs as soon as it is defined. </h2>
+    <script>
+        // (function add(a,b){
+        //     console.log(a+b);
+        // })(5,5)
+
+        // (function say(){
+        //     console.log("Hay");
+        // })();
+
+        // (() => console.log("Hello im iifi")) ();
+
+        // let value = (() => 1000)();
+        // console.log(value);
+
+
+        // api using iifi syntax
+    //   const data =  (async () => await fetch('')) ();
+
+    // Example of iifi
+
+    // const atm = (function(initialBalance){
+    //     let Balance = initialBalance;
+    //     function withdraw(amt){
+    //         if( amt > Balance){
+    //             // return `Sorry your balance is ${Balance} only.`;
+    //             return 'Insufficient money';
+    //         }
+    //         else{
+    //             Balance -= amt;
+    //             return Balance;
+    //         }
+    //     }
+    //     return {withdraw};
+    // });
+
+    // const Saliram = atm(1000);
+    // console.log(Saliram.withdraw(100));
+    // console.log(Saliram.withdraw(500));
+    // console.log(Saliram.withdraw(200));
+    // console.log(Saliram.withdraw(50));
+
+    // console.log(Saliram.withdraw(200));
+    </script>
+    <script>
+        async function getData(dataId){
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("Weather Data ->",dataId);
+                    resolve(200);
+                },2000)
+            })
+        }
+
+        (async function() {
+            console.log("getting data1....");
+            await getData(1);
+            console.log("getting data2....");
+            await getData(2);
+            console.log("getting data3....");
+            await getData(3);
+            console.log("getting data4....");
+            await getData(4);
+        })();
+    </script>
+
+</body>
+</html>

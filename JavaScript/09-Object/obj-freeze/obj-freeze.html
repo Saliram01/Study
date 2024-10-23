@@ -1,0 +1,29 @@
+<script>
+    const Student2 = {
+        rollNo : 25,
+        firstName : 'Saliram',
+        'last-Name' : 'Chaudhary',
+        college : 'spa',
+        saliram : 'developer',
+
+        // child obj
+        address : {
+            city : 'Banglore',
+            state : 'Karnataka',
+            pinCode : 123456,
+
+            // child child obj
+            moreDetail : {
+                piopulation : 123456789,
+                area : '787 sq km'
+            },
+        },
+        age : 22,
+        isGraduate : false,
+    }
+    // when obj is freeze then we cannot change or update anything.
+    Object.freeze(Student2);
+
+    // check key is availabel in obj or not
+    console.log('firstName' in Student2);
+</script>

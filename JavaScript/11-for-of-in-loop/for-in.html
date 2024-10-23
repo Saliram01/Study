@@ -1,0 +1,29 @@
+<script>
+   // used in object
+
+console.log('=> For In Loop <=');
+    // for-in loop
+    const person = {
+        firstName : 'Saliram',
+        lastName : 'Chaudhary',
+        age : 22,
+        Gender : 'Male',
+        city : 'Banglore',
+    }
+
+    for(const key in person){
+        // console.log(key);
+        // access value
+        console.log(key ,':' ,person[key]);
+    }
+
+    // const personKey = Object.keys(person);
+    // const personValues = Object.values(person);
+    // const personEntries = Object.entries(person);
+    // console.log(personKey);
+    // console.log(personValues);
+    // console.log(personEntries);
+    // for(const key of personKey){
+    //     console.log(key);
+    // }
+</script>

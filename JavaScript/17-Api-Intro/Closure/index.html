@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <h1 id="my-name">Hello Im Saliram</h1>
+    <button id="my-btn">Click</button> -->
+    <script>
+
+        function makeCounter(){
+            let count = 1;
+            function increment(){
+                console.log(count++);
+            }
+            return increment;
+        }
+
+        const count = makeCounter();
+        count();
+        count();
+        count();
+        count();
+        count();
+
+        // const myName = document.querySelector('#my-name');
+        // const myBut = document.querySelector('#my-btn');
+
+        // function makeTextSizer(size){
+        //     function changeSize(){
+        //         myName.style.fontSize = `${size}px`;
+        //     }
+        //     return changeSize;
+        // }
+
+        // const fontSize30 = makeTextSizer(30);
+        // const fontSize40 = makeTextSizer(40);
+        // const fontSize80 = makeTextSizer(80);
+        // const fontSize100 = makeTextSizer(100);
+
+        // myBut.addEventListener('click',fontSize80);
+
+
+
+        // function main(){
+        //   const  name = 'Saliram Chaudhary'
+    
+        //     function user(){
+        //         console.log(name);
+        //     }
+        //     user();
+        // }
+        // main();
+    
+    
+        // function main(){
+        //    const name = 'Saliram Chaudhary'
+    
+        //     function user(){
+        //         console.log(name);
+        //     }
+        //     return user;
+        // }
+        // const sr = main();
+        // sr();
+        // sr();
+        // sr();
+    
+        // function main(name){
+        //     function user(){
+        //         console.log(name);
+        //     }
+        //     return user;
+        // }
+        // const consoleSC = main("Saliram Chaudhary");
+        // consoleSC();
+        // console.log(consoleSC);
+    </script>
+</body>
+</html>

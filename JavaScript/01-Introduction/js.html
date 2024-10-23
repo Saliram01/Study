@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #313131;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center; color: turquoise; margin-bottom: 20px;">js</h2>
+    <ul>
+
+    </ul>
+    <script>
+        const data = document.querySelector('ul');
+
+        const radius = [2, 4, 1, 6, 8];
+
+        const area = function (radius) {
+            return Math.PI * radius * radius;
+        }
+
+        const circumference = function (radius) {
+            return 2 * Math.PI * radius;
+        }
+
+        const diameter = function (radius) {
+            return 2 * radius;
+        }
+
+        const calculate = function (radius, logic) {
+            const output = [];
+            for (let i = 0; i < radius.length; i++) {
+                output.push(logic(radius[i]));
+            }
+            return output;
+        }
+
+        console.log("Area of circle " + calculate(radius, area));
+        // const areaCircle = calculate(radius, area);
+
+        console.log("Circumference of circle " + calculate(radius, circumference));
+        // const circumCircle = calculate(radius, circumference);
+
+        console.log("Diameter of circle " + calculate(radius, diameter));
+        // const diameterCircle = calculate(radius, diameter);
+
+    </script>
+</body>
+
+</html>

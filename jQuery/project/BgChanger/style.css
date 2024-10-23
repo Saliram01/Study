@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slategray;
+}
+
+h1 {
+    color: #ffffff;
+    padding: 10px 0;
+}

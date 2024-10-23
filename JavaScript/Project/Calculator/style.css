@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body{
+    background-color: gray;
+}
+.container {
+   display: flex;
+   justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    box-shadow: 0 0 4px rgb(255, 255, 255);
+    text-align: center;
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.box input{
+    width: 95%;
+    height: 55px;
+    margin: 10px 0;
+    padding: 0 15px;
+    text-align: end;
+    font-size: xx-large;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+.btn{
+    margin-top: 25px;
+    border-radius: 10px;
+}
+.btn button{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 100%;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgb(255, 254, 254);
+    cursor: pointer;
+}
+.btn button:active{
+    background-color: #ccc;
+}
+@media (max-width: 667px){
+    .box{
+        box-shadow: 0 0 4px rgb(255, 255, 255);
+        text-align: center;
+        width: 320px;
+        height: auto;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .btn{
+        margin-top: 25px;
+        border-radius: 10px;
+    }
+    .box input{
+        width: 95%;
+        height: 50px;
+        margin: 10px 0;
+        padding: 0 15px;
+        text-align: end;
+        font-size: xx-large;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    }
+    .btn button{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        border-radius: 100%;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 0 8px rgb(255, 255, 255);
+        cursor: pointer;
+    }
+}
+
+

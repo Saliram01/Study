@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add List With Function</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button {
+            width: 50%;
+            padding: 10px 0;
+        }
+
+        #parent {
+            margin: 20px 50px;
+        }
+
+        li {
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <button onclick="Add()">Add</button>
+        <button onclick="Edit()">Edit</button>
+    </div>
+    <ol id="parent"></ol>
+    <script>
+        function Element(Node){
+            let li = document.createElement('li');
+            li.append(document.createTextNode(`${Node}`));
+            document.querySelector('#parent').appendChild(li);
+        }
+        
+        function Add(){Element(prompt("Add a list of language"));}
+
+        document.querySelector('#parent').addEventListener('click',(e) => {
+            if(e.target.tagName === 'LI'){e.target.remove()}
+        })
+
+        function ChangeNode(text,index){
+            let ChangeNode = document.querySelector(`li:nth-child(${index})`);
+            ChangeNode.outerHTML = `<li>${text}</li>`;
+        }
+
+        function Edit(){
+            ChangeNode(prompt("Enter New Name"),prompt("Enter number which number text you want to edit."));
+        }
+
+    </script>
+</body>
+</html>

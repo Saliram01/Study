@@ -1,0 +1,24 @@
+<script>
+
+    // const number = [2,4,6,8,10,12]
+    // function restPara(a,b,c,...num){ // rest parameter
+    //     console.log(a,b,c);
+    //     let sum = 0;
+    //     for(let i  = 0; i < num.length; i++){
+    //         sum += num[i];
+    //     }
+    //     return sum;
+    // }
+    // // console.log(restPara(2,4,6,8));
+    // console.log(restPara(...number)); // spread operator
+
+
+
+    // Using reduce
+    function add(...nums){
+        // return nums.reduce((acc, curr) => acc + curr);
+        return [...arguments].reduce((acc,curr) => acc + curr); // without parameter
+        // return Array.from(arguments).reduce((acc,curr) => acc + curr); without parameter
+    }
+    console.log(add(2,4,6,8));
+</script>

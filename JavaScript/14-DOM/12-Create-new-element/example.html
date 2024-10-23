@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom using example</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+
+        .container {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+    const parent = document.querySelector('body');
+
+    const div = document.createElement('h1');
+
+    div.className = "container";
+
+    div.id = Math.floor(Math.random() * 10 + 10);
+    parent.style.backgroundColor = "brown";
+    div.style.textAlign = "center";
+
+    const addText = document.createTextNode("Hello");
+    div.appendChild(addText)
+
+    parent.append(div)
+</script>
+
+</html>

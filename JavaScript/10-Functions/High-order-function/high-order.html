@@ -1,0 +1,30 @@
+<script>
+    //callback function
+    function mul(a,b,cb){
+        let two = a * b;
+        cb(two)
+
+        return () => console.log(two);
+    }
+
+    let resMul = mul(5,2, () => {});
+    resMul();
+
+
+    //HighOrder Function
+    function highOrder(b){
+        console.log(b);
+    }
+
+    function abc(){
+        console.log('Saliram');
+    }
+
+    highOrder(abc);
+
+    /// Ananomous Function
+    // Callback function
+    (function() {
+        console.log("Hiiii");
+    })
+</script>

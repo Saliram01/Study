@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Responsive navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3238f2",
+                    },
+                    boxShadow: {
+                        sm: "0 0 5px rgba(0 ,0, 0,0.5)",
+                    },
+                    fontFamily: {
+                        display: ["Poppins", "sans-serif"],
+                        body: ["inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="font-body">
+    <!-- Navbar start -->
+
+    <nav class="p-3 flex bg-white justify-between items-center flex-1">
+        <a href="#" id="brand" class="flex gap-2 items-center">
+            <span class="font-bold shadow-sm px-3 py-1 text-3xl rounded-full">S</span>
+            <span class="font-bold text-lg font-display">ToDesktop</span>
+        </a>
+
+        <div id="nav-menu" class="hidden md:flex gap-10">
+            <a href="#" class="font-medium hover:text-primary">Pricing</a>
+            <a href="#" class="font-medium hover:text-primary">Docs</a>
+            <a href="#" class="font-medium hover:text-primary">Changelog</a>
+            <a href="#" class="font-medium hover:text-primary">Blogs</a>
+            <a href="#" class="font-medium hover:text-primary">Login</a>
+        </div>
+
+        <div class="hidden lg:flex justify-end">
+            <button
+                class="hidden md:flex gap-2 items-center border border-gray-400 px-2 py-2 rounded-lg hover:border-gray-600">
+                <span>Electron Developers</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <button class="p-2 md:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+
+        <!-- pop-up menu start -->
+
+        <div id="nav-dialog" class="hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <span class="font-bold shadow-sm px-3 py-1 text-3xl rounded-full">S</span>
+                    <span class="font-bold text-lg font-display">ToDesktop</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-6 px-4 my-6">
+                <a class="font-medium p-2 hover:bg-gray-100 rounded-sm" href="#">Pricing</a>
+                <a class="font-medium p-2 hover:bg-gray-100 rounded-sm" href="#">Docs</a>
+                <a class="font-medium p-2 hover:bg-gray-100 rounded-sm" href="#">Changelog</a>
+                <a class="font-medium p-2 hover:bg-gray-100 rounded-sm" href="#">Blog</a>
+                <a class="font-medium p-2 hover:bg-gray-100 rounded-sm" href="#">Login</a>
+            </div>
+            <div class="h-[2px] bg-gray-100">
+                <button class="w-full mt-8 flex px-6 hover:bg-gray-50 py-4 rounded-lg hover:border-gray-600">
+                    <span>Electron Developers</span>
+                </button>
+            </div>
+        </div>
+        <!-- pop-up menu end-->
+    </nav>
+    <!-- Navbar start -->
+
+    <!-- main start -->
+
+    <main>
+        <!-- hero section start -->
+        <div id="hero" class="min-h-screen bg-gradient-to-br from-purple-50 via-orange-50 to-transparent">
+            <div id="hero-container" class="max-w-4xl py-4 px-4 mx-auto flex flex-col sm:items-center sm:text-center">
+                <div
+                    class="flex my-6 gap-2 items-center border border-yellow-300 rounded-lg px-3 py-1 bg-yellow-50 w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-300 group">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
+                    <p class="font-display font-medium text-yellow-600">
+                        v0.21.1: <span>Find-in-page bug fixes</span>
+                    </p>
+                    <i
+                        class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+                </div>
+                <div id="hero-features" class="sm:flex gap-8 my-4 hidden">
+                    <div class="flex justify-center items-center gap-2 text-gray-500">
+                        <i class="fa-solid fa-file-code text-sm"></i>
+                        <p>Code Optional</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-2 text-gray-500">
+                        <i class="fa-solid fa-file-code text-sm"></i>
+                        <p>Code Optional</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-2 text-gray-500">
+                        <i class="fa-solid fa-file-code text-sm"></i>
+                        <p>Code Optional</p>
+                    </div>
+                </div>
+                <h1 class="text-4xl font-display text-gray-800 font-bold leading-snug sm:text-7xl sm:leading-normal">
+                    Web app to desktop app in minutes
+                </h1>
+                <p class="text-xl mt-4 sm:text-2xl sm:my-6">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    nisi veritatis ex. Lorem ipsum dolor sit amet.
+                </p>
+                <div id="button-container" class="flex flex-col gap-3 my-8 sm:flex-row">
+                    <button
+                        class="py-3 px-8 font-semibold shadow-sm hover:bg-opacity-90 bg-primary rounded-lg text-white">
+                        Download now
+                    </button>
+                    <button
+                        class="py-3 px-8 font-semibold rounded-lg bg-white border border-gray-400 hover:border-gray-800">
+                        Read Docs
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

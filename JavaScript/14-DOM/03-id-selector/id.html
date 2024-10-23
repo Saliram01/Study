@@ -1,0 +1,42 @@
+<style>
+    .red-class{
+        color: rgb(164, 146, 146);
+        /* text-decoration: underline; */
+
+    }
+</style>
+<h1>Id Selector</h1>
+<div>
+    <h3>background</h3>
+    <h2>Hey, My name is saliram chaudhary <span id="username">SRC</span></h2>
+    <h3>color</h3>
+</div>
+<script>
+    // const user = document.querySelector('#username');
+    // console.log(user.innerText);
+    // user.innerHTML = "<h2>SALIRAM CHAUDHARY</h2>";
+
+    const el = document.getElementById('username');
+    // console.log(el.innerText);
+    el.innerText = "John Dom";
+    // using css through class 
+    el.classList.add("red-class");
+    console.log(el.classList);
+    // el.classList.remove("red-class");
+    //text color inline css
+    el.style.textDecoration="underline";// inline css with js
+    // parent background color
+    el.parentElement.style.background = "orange";
+    const body = document.querySelector("body");
+    //body background color
+    body.style.background = "lightblue";
+
+    // using tag background color add in js
+    const div = document.querySelector("div");
+    div.style.background = "red";
+
+    console.log(el);
+    console.log(el.id);
+    el.setAttribute("aria","123")
+    el.remove();// remove used to remove the tag of id or class ;
+</script>

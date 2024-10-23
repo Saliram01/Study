@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+    color: #ffffff;
+}
+
+.ttt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title {
+    margin: 30px 0;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.box:active {
+    border: 2px solid;
+    border-color: violet;
+}
+
+.btn {
+    margin: 20px 0;
+}
+
+.btn button {
+    width: 8rem;
+    height: 40px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    border: 2px solid;
+    border-color: greenyellow;
+}
+
+#winner {
+    width: auto;
+    height: 20px;
+    font-size: 2rem;
+}

@@ -1,0 +1,44 @@
+<h2 id="fact1"></h2>
+<h2 id="fact2"></h2>
+<h2 id="fact3"></h2>
+<h2 id="fact4"></h2>
+<h2 id="fact5"></h2>
+<button id="btn">GetFact</button>
+<script>
+    // const URL  = "https://api.restful-api.dev/objects";
+    let url = "https://cat-fact.herokuapp.com/facts";
+
+    const fact1 = document.querySelector('#fact1');
+    const fact2 = document.querySelector('#fact2');
+    const fact3 = document.querySelector('#fact3');
+    const fact4 = document.querySelector('#fact4');
+    const fact5 = document.querySelector('#fact5');
+    const btn = document.querySelector('#btn');
+
+    // let getData = (async() => {
+    //     console.log("Fetching data....");
+    //     let response = await fetch(url);
+    //     console.log(response);
+    //     let data = await response.json();
+    //     console.log(data);
+    //     fact.innerHTML = data[0].text;
+    // })
+    // btn.addEventListener('click', getData);
+
+    async function pChain() {
+        await fetch(url)
+            .then((res) => {
+                return res.json();
+            }).then((data) => {
+                // console.log(data);
+                fact1.innerHTML = data[0].createdAt;
+                fact2.innerHTML = data[0].user;
+                fact3.innerHTML = data[0]._id;
+                fact4.innerHTML = data[0].text;
+                fact5.innerHTML = data[0].type;
+            }).catch((err) => {
+                console.log(err);
+            })
+    }
+    btn.addEventListener('click', pChain);
+</script>

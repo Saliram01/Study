@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubling</title>
+    <style>
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .green{
+            background-color: green;
+            width: 400px;
+            height: 300px;
+        }
+        .pink{
+           width: 300px;
+           height: 200px;
+           background-color: pink;
+        }
+        .blue{
+           width: 200px;
+           height: 100px;
+           background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Bubbling</h1>
+    <div class="green">
+        <div class="pink">
+            <div class="blue"><h1>.-.-.</h1></div>
+        </div>
+    </div>
+</body>
+    <script>
+        const green = document.querySelector(".green");
+        const pink = document.querySelector(".pink");
+        const blue = document.querySelector(".blue");
+
+        window.addEventListener('click',(e) => {
+            console.log("6. Window");
+        },{once: true})
+
+        document.addEventListener('click',(e) => {
+            console.log("5. Document");
+        },{capture: true})
+
+        document.body.addEventListener('click',(e) => {
+            console.log("4. Document Body");
+        },{capture: true})
+
+
+        green.addEventListener('click',(e) => {
+            console.log("3. Green ");
+            // e.stopPropagation();,
+        },{capture: true})
+
+        pink.addEventListener('click',(e) => {
+            console.log("2. Pink ");
+        },{capture: true})
+
+        blue.addEventListener('click',(e) => {
+            // e.stopPropagation();
+            console.log("1. Blue ");
+        },{capture: true})
+    </script>
+</html>

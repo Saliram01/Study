@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>LoginRegister</title>
+</head>
+
+<body>
+    <section class="w-full h-[100vh] bg-[url('https://wallpapercave.com/wp/wp5299046.jpg')] bg-cover">
+        <div class="max-w-[1320px] mx-auto py-8 flex justify-between items-center text-white">
+            <div class="text-2xl font-bold">LOGO</div>
+            <nav class="font-bold grid grid-cols-4 text-center">
+                <div class="hover:bg-slate-600 py-2 px-5 rounded-full cursor-pointer"><a href="#home">Home</a></div>
+                <div class="hover:bg-slate-600 py-2 px-5 rounded-full cursor-pointer"><a href="#blog">Blog</a></div>
+                <div class="hover:bg-slate-600 py-2 px-5 rounded-full cursor-pointer"><a href="#services">Services</a>
+                </div>
+                <div class="hover:bg-slate-600 py-2 px-5 rounded-full cursor-pointer"><a href="#about">About</a></div>
+            </nav>
+            <div class="space-x-6">
+                <button class="py-2 px-8 bg-orange-400 rounded-full">Sign In</button>
+                <button class="py-2 px-8 bg-slate-400 rounded-full">Sign Up</button>
+            </div>
+        </div>
+
+        <div class="max-w-[1320px] mx-auto h-[85%]">
+            <div class="">
+                <form action="#" class="max-w-md mx-auto h-auto p-4">
+                    <h2 class="text-center text-white text-2xl py-8">Sign Up</h2>
+                    <div class="flex justify-between items-center">
+                        <div class=" mb-4 px-4 space-x-2 bg-gray-700 rounded-full flex justify-between items-center">
+                            <i class="fa-regular fa-user text-white"></i>
+                            <input class="py-2 w-36 outline-none bg-transparent text-white" type="text"
+                                placeholder="Firstname">
+                        </div>
+                        <div class=" mb-4 px-4 space-x-2 bg-gray-700 rounded-full flex justify-between items-center">
+                            <i class="fa-regular fa-user text-white"></i>
+                            <input class="py-2 w-36 outline-none bg-transparent text-white" type="text"
+                                placeholder="Lastname">
+                        </div>
+                    </div>
+                    <div class="py-4">
+                        <div class="w-[100%] rounded-full flex justify-between items-center overflow-hidden px-4 bg-gray-700">
+                            <i class="fa-regular fa-envelope text-white"></i>
+                            <input class="w-[94%] py-2 bg-transparent rounded-full outline-none text-white" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="w-[100%] rounded-full flex justify-between items-center overflow-hidden px-4 bg-gray-700">
+                            <i class="fa-solid fa-lock text-white"></i>
+                            <input class="w-[94%] py-2 bg-transparent rounded-full outline-none text-white" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="py-4">
+                        <button class="w-[100%] py-2 bg-gray-400 rounded-full text-white">Register</button>
+                    </div>
+                    <div class="flex justify-between items-center text-white">
+                        <div><input type="checkbox">Remember Me</div>
+                        <div>
+                            <p>Terms & conditions</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

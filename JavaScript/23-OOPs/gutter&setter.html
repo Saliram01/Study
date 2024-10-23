@@ -1,0 +1,18 @@
+<script>
+    const user = {
+        firstName : "Saliram",
+        lastName : "Chaudhary",
+        get fullName(){
+            return `${this.firstName} ${this.lastName}`;
+        },
+        set fullName(value){
+            const splitedName = value.split(' ');
+            this.firstName = splitedName[0];
+            this.lastName = splitedName[1];
+        }
+    }
+    console.log(user.fullName);
+    user.fullName = 'Baliram Chaudhary';
+    console.log(user);
+
+</script>

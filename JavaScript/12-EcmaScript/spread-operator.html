@@ -1,0 +1,49 @@
+<script>
+    // Array
+
+    // const num1 = [1,2,3,4];
+    // const num2 = [5,6,7,8];
+    // const name = 'Saliram'
+    // const joinArray = [...num1,...num2, ...name];
+    // console.log(joinArray);
+
+
+    // Object copy
+
+    const user = {
+        name : 'Saliram',
+        age : 20,
+        Gender : 'Male',
+    }
+
+    const updateUser = {...user, city: 'Banglore'}
+    console.log(updateUser);
+
+
+
+    // Function
+
+    function add(){
+        let sum = 0;
+        for(let i = 0; i < arguments.length; i++){
+            sum += arguments[i];
+        }
+        return sum;
+    }
+    const value = add(2,4,6,8);
+    console.log(value);
+
+
+    // using spread operator join array 
+    const num1 = [1,2,3,4];
+    const num2 = [5,6,7,8];
+    const joinArray = [...num1,...num2];
+    function add(){
+        let addition = 0;
+        for(let i = 0; i < arguments.length; i++){
+            addition += arguments[i];
+        }
+        return addition
+    }
+    console.log(add(...joinArray));
+</script>

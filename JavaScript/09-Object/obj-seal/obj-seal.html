@@ -1,0 +1,26 @@
+<script>
+    const Student2 = {
+        rollNo : 25,
+        firstName : 'Saliram',
+        'last-Name' : 'Chaudhary',
+        college : 'spa',
+        saliram : 'developer',
+
+        // child obj
+        address : {
+            city : 'Banglore',
+            state : 'Karnataka',
+            pinCode : 123456,
+
+            // child child obj
+            moreDetail : {
+                piopulation : 123456789,
+                area : '787 sq km'
+            },
+        },
+        age : 22,
+        isGraduate : false,
+    }
+    // when obj is seal then we change only key and value only and cannot add or delete.
+    Object.seal(Student2);
+</script>

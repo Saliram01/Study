@@ -1,0 +1,1 @@
+$('h1').text('Bg Changer Through Input');

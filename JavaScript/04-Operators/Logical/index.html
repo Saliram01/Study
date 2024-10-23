@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operator</title>
+</head>
+<body>
+    <h1>Logical Operator</h1>
+    <ol>
+        <li> && </li>
+        <li> || </li>
+        <li>!(NOT)</li>
+    </ol>
+
+    <script>
+        let a = 5;
+        let b = 10;
+        let c = 15;
+        let d = 12;
+        if(a > b && c > d){
+            console.log("true");
+        }
+        else{
+            console.log("false");
+        }
+
+        let x = 6;
+        let y = 5;
+        let z = 19;
+        let e = 20;
+        if(x > y || z > e){
+            console.log("true");
+        }
+        else{
+            console.log("false");
+        }
+
+        console.log("logical operator");
+
+        let result = ' ' && 'Hello'
+        console.log(result);
+        let result2 = ' ' || 'Hello'
+        console.log(result2);
+
+        let res = 'Hello' && 8+4
+        console.log("res :", res);
+        let res1 = 'Hello' || 8+4
+        console.log("res1 :", res1);
+    </script>
+</body>
+</html>

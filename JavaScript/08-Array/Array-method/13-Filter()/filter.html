@@ -1,0 +1,80 @@
+<script>
+    // it return filter value in new array
+
+    // let arr = [1,2,3,4,5,6];
+    // let res = arr.filter((val,index,arr) => {
+    //     return val % 2 == 0;
+    // })
+    // console.log(res);
+
+    // let arr = [1,2,3,4,5,6];
+    // let res = arr.filter((val,index,arr) => {
+    //     return val > 3;
+    // })
+    // console.log(res);
+
+
+    // const newArr = number.filter((num) => num > 4 == 0);
+    // console.log(newArr);
+
+    // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    // const evenNumbers = numbers.filter(function (num) {
+    //     return num % 2 === 0;
+    // });
+
+    // console.log(evenNumbers);
+
+
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    // Use map method to create an array of booleans
+    const booleanValues = numbers.map(function (num) {
+        return num % 2 === 0;  // Returns true for even numbers, false for odd numbers
+    });
+
+    console.log(booleanValues);
+    
+    // const months = ['January', 'February', 'March', 'April', 'May'];
+
+    // Filter
+    // const filterMonths = months.filter((month, index,array) => {
+    // console.log(index + 1, month);
+    // return month.includes('M');
+    // return index >= 3
+    // })
+
+    // const student = [
+    //     {
+    //         name: 'Saliram',
+    //         age : 15
+    //     },
+    //     {
+    //         name : 'Sushil',
+    //         age : 18
+    //     },
+    //     {
+    //         name : 'Dinesh',
+    //         age : 20
+    //     },
+    //     {
+    //         name : 'Avishek',
+    //         age : 22
+    //     },
+    //     {
+    //         name : 'Sabin',
+    //         age : 24
+    //     },
+    //     {
+    //         name : 'Pradeep',
+    //         age : 26
+    //     },
+    // ];
+    // const adiltStudent = student.filter((student) => {
+    //     return student.age >= 22;
+    // }).map((student) => {
+    //     return student.name;
+    // }).filter((student) => {
+    //     return student.includes('S');
+    // })
+</script>

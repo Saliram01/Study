@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Enter number a :");
+        let operator = prompt("Enter operator :");
+        let b = prompt("Enter number b :");
+
+        switch (operator) {
+            case '+':
+
+                let sum = a + b
+                console.log("Sum number is :", sum);
+                break
+
+            case '-':
+                let sub = a - b
+                console.log("Sub number is :", sub);
+                break
+
+            case '*':
+                let mul = a * b
+                console.log("Mul number is :", mul);
+                break
+            
+            case '/':
+                let div = a / b
+                console.log("Division number is :", div);
+                break
+            
+            case '%':
+                let modulo = a % b
+                console.log("Reminder number is :", modulo);
+                break
+                
+            default :
+            alert("operator is invalid.");
+        }
+
+
+
+    </script>
+</body>
+
+</html>

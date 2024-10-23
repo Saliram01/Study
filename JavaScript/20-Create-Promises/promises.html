@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Promise</title>
+</head>
+
+<body>
+    <h1>Create promise</h1>
+    <button class="resolve">Resolve Promise</button>
+    <button class="reject">Reject Promise</button>
+</body>
+<script>
+    const promise1 = document.querySelector('.resolve');
+    const promise2 = document.querySelector('.reject');
+
+    const p = new Promise((resolve, reject) => {
+
+        promise1.addEventListener('click', () => {
+            resolve("promise resolve");
+        })
+        promise2.addEventListener('click', () => {
+            reject("promise reject");
+        })
+    })
+
+    p.then((data) => {
+        console.log(data);
+        return 123;
+    })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+    .finally(() => {
+        console.log("Complete execution program");
+    })
+
+</script>
+
+</html>

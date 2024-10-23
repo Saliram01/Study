@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard-Evt</title>
+</head>
+
+<body>
+    <h2 tabindex="0">Keyboard-Evt</h2>
+    <input type="text">
+    <ul>
+        <li>Keyboard</li>
+        <li>Tabindex="0"</li>
+        <li>KeyUp</li>
+        <li>KeyDown</li>
+    </ul>
+</body>
+<script>
+    const h2 = document.querySelector('h2');
+
+    // window.addEventListener('keypress', (e) => {
+    //     // console.log(e);
+    //     console.log("keyValue : ",e.key);
+    //     console.log("KeyCode : ",e.keyCode);
+    // })
+
+    // window.addEventListener('keyup', (e) => {
+    //     // console.log(e);
+    //     console.log("keyValue : ",e.key);
+    //     console.log("KeyCode : ",e.keyCode);
+    // })
+
+    window.addEventListener('keydown', (e) => {
+        // console.log(e);
+        console.log("keyValue : ",e.key);
+        console.log("KeyCode : ",e.keyCode);
+    })
+
+</script>
+
+</html>

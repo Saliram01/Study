@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="./lib/script.js" defer ></script>
+    <title>Babel-Command</title>
+</head>
+
+<body style="background-color: rgb(179, 156, 179);">
+    <div id="root"></div>
+
+    <!-- 1st -> npm init -y 
+    2nd -> npm install --save-dev @babel/core @babel/cli 
+    3rd -> package.json file in script -> "build": "babel ./script.js -d lib"
+    4th -> npm run build -> for creating lib file
+    5th -> then link in html file to the lib script file => ./lib/script.js
+    6th -> npm install @babel/preset-react
+    7th -> link in html react and react-dom cdn in the head 
+    8th -> .babelrc file create then put that path -> it is babel config file
+    {
+        "presets": ["@babel/preset-react"]
+    } 
+    9th -> npm run build => used for start babel    
+    -->
+    
+
+    <!-- Generate source map 
+     1st method =>in script => "build": "babel ./script.js -d lib --source-maps",
+
+     "build": "babel ./script.js -d lib --watch" -> it is used for ato compile file
+
+    2nd .babelrc => {
+                "presets": ["@babel/preset-react"],
+                "sourceMaps": true
+                } 
+    -->
+</body>
+
+</html>

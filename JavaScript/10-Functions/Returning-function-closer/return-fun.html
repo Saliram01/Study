@@ -1,0 +1,32 @@
+<script>
+    //Return value with closer
+    // function outer() {
+    //     const a = 5;
+    //     function parent() {
+
+    //         const b = 6;
+    //         function add() {
+    //             console.log(a + b);
+    //         }
+    //         return add
+    //     }
+    //     return parent()
+    // }
+    // let x = outer();
+    // console.dir(x)
+
+
+    // return another function called anonymous
+    function outer() {
+        const a = 5;
+        function parent() {
+            const b = 6;
+            return function () {
+                console.log(a + b);
+            }
+        }
+        return parent()
+    }
+    let x = outer();
+    console.dir(x)
+</script>

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+h1{
+    background-color: turquoise;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    color: brown;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    width: 1000px;
+    outline-color: yellowgreen;
+}

@@ -1,0 +1,24 @@
+<script>
+    // This Keyword
+    // Normal Function
+    const obj = {
+        value : 20,
+
+        myFunction : function () {
+            console.log('Value is : ' + this.value);
+        },
+    };
+    obj.myFunction();
+
+
+    // Arrow Function not work this keyword
+    const obj1 = {
+        value : 50,
+
+        selfFunc : () => {
+            console.log('Value is ' + this.value);
+        },
+    };
+    obj1.selfFunc();
+
+</script>

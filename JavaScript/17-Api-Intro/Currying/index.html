@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currying</title>
+</head>
+<body>
+    <script>
+
+        // STEP 1
+        function add(a){
+            return function(b){
+                return function(c){
+                    return a + b + c;
+                };
+            };
+        }
+        console.log(add(5)(6)(4));
+
+
+            // STEP 2
+            let add = (a) => (b) => (c) => a + b + c;
+            console.log(add(5)(6)(4));
+
+
+
+
+            // STEP 3
+        function sendAutoEmail(to){
+            return function(subject){
+                return function(body){
+                    console.log(`Sending email to ${to} with subject ${subject}: ${body}`);
+                };
+            };
+        }
+
+        let step1 = sendAutoEmail("saliram@gmail.com");
+        let step2 = step1("New Order Confirmation.");
+        step2("Hay Saliram, Here is something for you.");
+
+            // STEP 4
+        let sendAutoEmail = (to) => (subject) => (body) => `Sending email to ${to} with subject ${subject}: ${body}`;
+        let step10 = sendAutoEmail("saliram@gmail.com");
+        let step11 = step1("New Order Confirmation.");
+       console.log(step11("Hay Saliram, Here is something for you."));
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-Evt</title>
+    <style>
+        h1{
+           border-bottom: 2px solid rgb(125, 125, 64);
+           width: 415px; 
+        }
+        li{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>Form Event and Event Object</h1>
+        <li>click</li>
+        <li>onclick</li>
+        <li>ondblclick</li>
+        <li>focus</li>
+        <li>blur</li>
+        <li>change</li>
+        <li>submit</li>
+    </ul>
+
+    <form action="">
+        <input type="text" name="username" id="username">
+        <input type="email" name="email">
+        <button>Submit</button>
+    </form>
+    <p></p>
+</body>
+<script>
+    const username = document.querySelector("#username");
+    const p = document.querySelector("p");
+    // username.addEventListener('input', (e) => {
+    //     console.log("input",e.target.value);
+    //     p.innerText = e.target.value;
+  
+    // })
+
+    // username.addEventListener('focus', (e) => {
+    //     console.log("focus",e);
+    // })
+    // username.addEventListener('blur', (e) => {
+    //     console.log("blur",e);
+    // })
+    username.addEventListener('change', (e) => {
+        console.log("change",e);
+    })
+</script>
+</html>

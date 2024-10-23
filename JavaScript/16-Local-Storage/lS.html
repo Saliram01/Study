@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Local Storage</h1>
+    <hr>
+    <form action="#">
+        <fieldset>
+            <legend>Form</legend>
+            <label for="">Name :</label>
+            <input id="name" type="text"><br><br>
+            <label for="">Age :</label>
+            <input id="age" type="number"><br><br>
+            <label for="">Address :</label>
+            <input type="text" id="address"><br><br>
+            <button>Submit</button>
+        </fieldset>
+    </form>
+    <script>
+
+        const student = {
+            name: '',
+            age: '',
+            address: '',
+        }
+        const inputName = document.querySelector("#name");
+        const inputAge = document.querySelector("#age");
+        const inputAddress = document.querySelector("#address");
+
+        inputName.addEventListener('input', (e) => {
+            student.name = e.target.value;
+            localStorage.setItem('student', JSON.stringify(student));
+
+        })
+        inputAge.addEventListener('input', (e) => {
+            student.age = e.target.value;
+            localStorage.setItem('student', JSON.stringify(student));
+        })
+        inputAddress.addEventListener('input', (e) => {
+            student.address = e.target.value;
+            localStorage.setItem('student', JSON.stringify(student));
+        })
+        // localStorage.clear();
+        // localStorage.removeItem(student);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<script>
+    // Destructuring is used for object and array;
+    // Array using destructuring
+    const colors = ['red','Green','Blue','Yellow','Brown','Orange'];
+
+    // const [color0,color1,color2] = colors;
+    // console.log(color1,color2,color3);
+
+    // const [,,color2] = colors;
+    // console.log(color2);
+    const {5: color4} = colors;
+    console.log(color4);
+
+
+    // Object using distructing
+
+    const user = {
+        name : 'Saliram',
+        age : 22,
+        address : {
+            city : 'Banglore',
+            state : 'Karnataka',
+        }
+
+    }
+
+    // const name = user.name;
+    // console.log(name);
+    // const age = user.age;
+    // console.log(age);
+
+    // const {name,age, age: userAge} = user;
+    // console.log(name,age,userAge);
+
+    // const {address : {city}} = user;
+
+
+    // FUNCTION 
+
+    // function intro(userObj){
+    //     console.log(userObj);
+    // }
+    // intro(user);
+
+    function intro({age, name}){
+        console.log(age, name);
+    }
+    intro(user);
+
+
+    // function printColor(colorArray){
+    //     console.log(colorArray);
+    // }
+    // printColor(colors)
+
+    // function printColor([a, b, c]){
+    //     console.log(a,b,c);
+    // }
+    // printColor(colors)
+
+    function printColor({4: clg5}){
+        console.log(clg5);
+    }
+    printColor(colors)
+
+</script>

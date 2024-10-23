@@ -1,0 +1,106 @@
+body {
+    font-family: serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    background: #00000025;
+}
+
+form {
+    box-shadow: 0 0 5px;
+    width: 340px;
+    border-radius: 8px;
+    height: 460px;
+}
+
+.header {
+    text-align: center;
+    color: rgb(62, 126, 165);
+    margin: 40px 0;
+}
+
+.input-group {
+    margin: 15px;
+}
+
+.input-field {
+    margin-top: 25px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.input-field input {
+    width: 100%;
+    height: 35px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.btn {
+    margin: 25px 0;
+}
+
+.btn button {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: rgb(61, 103, 148);
+}
+.forgot p{
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px 0;
+}
+
+.google a {
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px 30px;
+}
+
+.facebook a {
+    border: 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px 25px;
+}
+
+.link span {
+    padding: 0 5px;
+}
+
+@media (max-width:375px) {
+    .google a {
+        padding: 6px 20px;
+    }
+
+    .facebook a {
+        padding: 6px 15px;
+    }
+    .header {
+        font-size: 14px;
+    }
+    form {
+        box-shadow: none;
+        height: 450px;
+    }
+    .header {
+        margin: 0 0;
+    }
+}

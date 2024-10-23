@@ -1,0 +1,26 @@
+<script>
+    function promisify(fn) {
+        return function (...arga) {
+            return new Promise((resolve, reject) => {
+                fn(...args, (error, result) => {
+                    if (error) return reject(error);
+                    return resolve(resolve);
+                })
+            })
+        }
+    }
+
+    function loadScript(src, callback) {
+
+    }
+    const loadScriptNew = promisify(loadScript);
+
+    (async () => {
+        try {
+            const result = await loadScriptNew('test.js');
+            console.log("Done");
+        } catch(error){
+            console.log("Error ho gaya");
+        }
+    })();
+</script>

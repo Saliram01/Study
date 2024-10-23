@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String method</title>
+    <style>
+        body {
+            perspective: 270px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+            -webkit-box-reflect: below 1px linear-gradient(translate, #0005);
+            box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 25px #03e9f4, 0 0 100px #3dd1d9 inset;
+
+        }
+
+        h1 {
+            background: linear-gradient(100deg, rgb(84, 92, 153), rgb(165, 153, 38), rgb(113, 113, 110));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 5rem;
+            text-shadow: 0px 8px 15px #434241bb;
+            transform: rotate(20deg);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 15px #858181, 0 0 15px rgb(90, 134, 169) inset;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello JavaScript</h1>
+    <script>
+        // METHOD (WITHOUT ARGUMENTS)
+        // to print index value of string
+        let name = 'Saliram Chaudhary'
+        console.log(name[1]);
+
+        // to to check length of string
+        let lastName = 'Chaudhary saliram'
+        console.log(lastName.length);
+
+        // to translate lowerCase to UpperCase
+        let UpperCase = 'Kailali ga pa hasuliya'
+        console.log(UpperCase.toUpperCase());
+
+        // to Uppercase to lowercase
+        let lowerCase = 'RAMPUR-KAILALI'
+        console.log(lowerCase.toLowerCase());
+
+        // trim to remove extra spaces
+        const trim = '     Hi im saliram     '
+        // console.log(trim.trim());
+        // console.log(trim.trimStart());
+        console.log(trim.trimEnd());
+
+
+
+        // METHOD (WITH ARGUMENTS)
+        // indexOf
+        let finalMessage = 'I am saliram'
+        console.log(finalMessage.indexOf('s'));
+
+        // replace word
+        console.log(finalMessage.replace('I', 'Hello'));
+
+        // replaceAll
+        console.log("Replaceall ", finalMessage.replaceAll('a', 'i'));
+
+        // concat 
+        let first = 'I am'
+        let last = 'saliram'
+        console.log(first.concat(' ', last));
+
+        // padstarts
+        const lastFourDigit = '7891'
+        console.log(lastFourDigit.padStart(16, '*'))
+
+        // charAt
+        let middle = 'chaudhary'
+        console.log(middle.charAt(2));
+
+        // charcodeAT
+        let firstLast = 'saLiram-Chaudhary'
+        console.log(firstLast.charCodeAt(1));
+        console.log(firstLast.charCodeAt(2));
+
+        // split
+        let sita = 'sita chaudhary'
+        console.log(sita.split(" "));
+
+        // templateString
+
+        let account = 12345
+        let templateString = `My account number is ${account}`
+        console.log(templateString);
+
+        let bankBalance = 105000
+        let templateString2 = `I have ₹ or $ ${bankBalance} in my account.`
+        console.log(templateString2);
+
+
+        const balance = new Number(100);
+        console.log(balance.toString().length);
+        console.log(balance.toFixed(2));
+
+        const OtherNumber = 112.8966;
+        console.log(OtherNumber.toPrecision(4));
+
+        const hundreds = 100000000;
+        console.log(hundreds.toLocaleString('en-IN'));
+    </script>
+</body>
+
+</html>

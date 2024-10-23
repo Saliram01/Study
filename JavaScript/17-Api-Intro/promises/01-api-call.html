@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-api-call</title>
+</head>
+
+<body>
+    <script>
+
+        // async function getData(){
+        //     let resultFromServer = await fetch('https://fakestoreapi.com/products/category/jewelery');
+        //     console.log(await resultFromServer.json());
+        //  }
+        //  getData();
+
+        async function getData() {
+            try {
+                let res = await fetch('https://fakestoreapi.com/products/category/jewelery');
+                console.log(await res.json());
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        getData();
+
+
+
+        //    async function getData(){
+        //       await  fetch("https://fakestoreapi.com/products/category/jewelery")
+        //     .then((res)=>{
+        //         return res.json();
+        //     })
+        //     .then((data)=>{
+        //         console.log(data);
+        //     })
+        //     .catch((error)=>{
+        //         console.log(error);
+        //     })
+        //     }
+        //     getData();
+
+        // fetch('https://fakestoreapi.com/products/category/jewelery')
+        // .then((res) => {
+        //     return res.json();
+        // }).then((data) => {
+        //     console.log(data);
+        // })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

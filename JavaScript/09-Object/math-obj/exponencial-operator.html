@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math objective</title>
+</head>
+
+<body>
+    <h1>Properties Of Math Obj</h1>
+    <ol>
+        <li>Math.PI</li>
+        <li>Math.SQRT2</li>
+        <li>Math.E</li>
+    </ol>
+    <h1>Methods Of Math Obj</h1>
+    <ol>
+        <li>Math.sqrt(x)</li>
+        <li>Math.pow(x,y)</li>
+        <li>Math.floor(x)</li>
+        <li>Math.ceil(x)</li>
+        <li>Math.round(x)</li>
+        <li>Math.random()</li>
+    </ol>
+    <script>
+        console.log(Math);
+        let expo = 5 ** 3
+        console.log("Exponencial number is :", expo);
+
+        let x = Math.floor(2.5)
+        console.log("Floor number is :", x);
+
+        let y = Math.ceil(2.3)
+        console.log("Ceil number is :", y);
+
+        let round = Math.round(3.5)
+        console.log("Round number is :", round);
+
+        let random = Math.random()
+        console.log("Random number between 0 and 1 is :", random);
+        random = Math.random() * 20
+        console.log("Random number less than 20 is :", random);
+
+        const max = 20; 
+        const min = 30;
+        const ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
+        console.log(ranNum);
+
+        // max and min // it is used for greater or small number
+        console.log(Math.max(8,4,5,9,7,1,12));
+
+        console.log(Math);
+        let number = -5;
+        console.log(Math.abs(number)); // make positive number
+    </script>
+</body>
+
+</html>

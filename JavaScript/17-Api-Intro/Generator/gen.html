@@ -1,0 +1,63 @@
+<html>
+    <button id="next-button">Get Next</button>
+</html>
+<script>
+    // Iterator
+    // function makeIterator(start = 0, end = Infinity, step = 1){
+    //     let nextStart = start;
+    //     let interationCount = 0;
+    //     return{
+    //         next(){
+    //             let result;
+    //             if(interationCount < end){
+    //                 result = {value: nextStart, done: false};
+    //                 nextStart = nextStart + step;
+    //                 interationCount++;
+    //                 return result;
+    //             }  
+    //             return {value: interationCount, done: true};
+    //         },
+    //     };
+    // }
+    // const myIterator = makeIterator(1 ,10 ,1);
+    // let result = myIterator.next();
+
+    // while(!result.done){
+    //     console.log(result.value);
+    //     result = myIterator.next();
+    // }
+
+
+        // Generator
+        // function* count(){
+        //     yield 2;
+        //     yield 4;
+        //     yield 6;
+        //     yield 8;
+        //     yield 10;
+        // }
+
+        // const even = count();
+        // for(const e of even ){
+        //     console.log(e);
+        // }
+    
+        function* makeIteratorNew(start, end, stepStart = 1){
+            for(let i = start; i<=end; i += stepStart){
+                yield i;
+            }
+        }
+        const btn = document.getElementById('next-button');
+        
+        let one = makeIteratorNew(1, 10, 1);
+
+        document.getElementById('next-button').addEventListener('click', () => {
+            btn.innerText = one.next().value;
+        })
+
+        
+        // for(const val of one){
+        //     console.log(val);
+        // }
+
+</script>

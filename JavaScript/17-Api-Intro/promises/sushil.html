@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       const server = fetch('https://fakestoreapi.com/products/category/jewelery')
+        server.then((y)=>{
+            // console.log(y.status)
+            // console.log(y.ok)
+            y.json();
+            
+        })
+        server.then((x)=>{
+            console.log(x);
+        })
+        
+    </script>
+</body>
+</html>

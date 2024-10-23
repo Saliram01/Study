@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse-Evt</title>
+</head>
+<body>
+    <h2>Mouse Events</h2>
+    <ul>
+        <li>mousedown</li>
+        <li>mouseup</li>
+        <li>mouseenter</li>
+        <li>mouseleave</li>
+        <li>mousemove</li>
+        <li>mouseout</li>
+    </ul>
+    <h2>===========</h2>
+    <ul>
+        <li>wheel</li>
+        <li>scroll</li>
+        <li>touchstart</li>
+        <li>touchend</li>
+        <li>touchmove</li>
+        <li>drag</li>
+        <li>pointermove</li>
+        <li>pointerleave</li>
+    </ul>
+    <button draggable="true">Click Me</button>
+</body>
+<script>
+    const button = document.querySelector("button");
+    // div.addEventListener('mousedown', (e) => {
+    //     console.log(e);
+    // })
+
+    // div.addEventListener('mouseup', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('mouseenter', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('mouseleave', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('mousemove', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('mouseout', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('mouseover', (e) => {
+    //     console.log(e);// it works parent and child both 
+    // })
+
+    console.log("=======================================");
+
+    // button.addEventListener('wheel', (e) => {
+    //     console.log(e);
+    // })
+
+    // document.addEventListener('scroll', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('touchstart', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('touchend', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('touchmove', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('drag', (e) => {
+    //     console.log(e);
+    // })
+
+    // button.addEventListener('pointermove', (e) => {
+    //     console.log(e);
+    // })
+
+    button.addEventListener('pointerleave', (e) => {
+        console.log(e);
+    })
+</script>
+</html>

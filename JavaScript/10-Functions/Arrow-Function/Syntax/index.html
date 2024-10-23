@@ -1,0 +1,40 @@
+<script>
+    // Arrow Function
+    const arrowFunction = () => {
+        console.log("Heyy arrowFunction !!");
+    }
+    arrowFunction();
+
+
+
+    // parameter arrow function
+    const add = (a, b) => {
+        return a + b;
+    }
+    console.log(add(2,3));
+    
+
+
+
+    // One liner function
+    const mul = (x , y) => x * y; 
+    console.log(mul(5,5));
+
+
+
+    const multiArgu = (...argu) => {
+        console.log(argu);
+    }
+    multiArgu(2,4,6,8,10);
+
+    // unlimited argument passed
+    const addNum = (...addNumber) => {
+        let numb = 0;
+        for(let i = 0; i < addNumber.length; i++)
+        {
+            numb += addNumber[i];
+        }
+        return numb;
+    }
+    console.log(addNum(8,6,4,2));
+</script>

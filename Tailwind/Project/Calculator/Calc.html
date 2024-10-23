@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <title>Test</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        'md': '0 0 8px rgba(255, 255, 255, 0.5)',
+                        'sm': '0 0 6px rgba(255, 255, 255, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="w-full h-[100vh] bg-[#23292E] grid place-content-center">
+        <div class="shadow-md sm:p-8 p-4 sm:px-7 px-5 bg-[#252B32] rounded-xl ">
+            <input id="display" class="w-full sm:py-4 py-2 sm:text-2xl text-xl sm:mb-8 mb-6 outline-0 text-right pr-4 rounded-sm bg-transparent text-white" type="text" placeholder="0" readonly>
+            <div class="btn-group grid grid-cols-4 sm:gap-4 gap-3 text-lg text-white">
+                <button onclick="ClearDisplay()" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm text-orange-600">AC</button>
+                <button onclick="remove()" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm text-orange-600">DE</button>
+                <button onclick="appendDisplay('%')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm text-orange-600">%</button>
+                <button onclick="appendDisplay('/')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm text-orange-600">/</button>
+                <button onclick="appendDisplay('7')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">7</button>
+                <button onclick="appendDisplay('8')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">8</button>
+                <button onclick="appendDisplay('9')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">9</button>
+                <button onclick="appendDisplay('*')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm text-orange-600">*</button>
+                <button onclick="appendDisplay('4')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">4</button>
+                <button onclick="appendDisplay('5')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">5</button>
+                <button onclick="appendDisplay('6')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">6</button>
+                <button onclick="appendDisplay('-')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm text-orange-600">-</button>
+                <button onclick="appendDisplay('1')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">1</button>
+                <button onclick="appendDisplay('2')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">2</button>
+                <button onclick="appendDisplay('3')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">3</button>
+                <button onclick="appendDisplay('+')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm text-orange-600">+</button>
+                <button onclick="appendDisplay('0')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">0</button>
+                <button onclick="appendDisplay('00')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">00</button>
+                <button onclick="appendDisplay('.')" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm">.</button>
+                <button onclick="Calculate()" class="sm:p-4 p-3 active:bg-slate-600 rounded-full sm:shadow-md shadow-sm bg-orange-600">=</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

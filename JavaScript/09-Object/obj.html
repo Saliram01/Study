@@ -1,0 +1,151 @@
+<script>
+    // const userName1 = 'saliram'
+    // const userName2 = 'saliram'
+
+    // const Student1 = {
+    //     rollNo : 25,
+    //     firstName : 'Saliram',
+    //     lastName : 'Chaudhary',
+    //     age : 22,
+    //     college : 'spa',
+    // }
+    // console.log(Student1);
+
+
+    // parent obj
+    // const Student2 = {
+    //     rollNo: 25,
+    //     firstName: 'Saliram',
+    //     'last-Name': 'Chaudhary',
+    //     age: 22,
+    //     college: 'spa',
+    //     saliram: 'developer',
+
+        // child obj
+    //     address: {
+    //         city: 'Banglore',
+    //         state: 'Karnataka',
+    //         pinCode: 123456,
+
+    //         // child child obj
+    //         moreDetail: {
+    //             piopulation: 123456789,
+    //             area: '787 sq km'
+    //         }
+    //     }
+    // }
+    // Main obj
+    // Student2.gender = 'male'
+    // Student2["middle-name"] = 'kumar'
+    // delete Student2.age
+    // console.log(Student2);
+    // console.log(Student2.firstName);
+    // console.log(Student2["last-Name"]);
+    // console.log(Student2[userName1]);
+    // console.log(Student2["first"+"Name"]);
+
+    // child obj
+    // console.log(Student2.address);
+    // console.log(Student2.address.moreDetail);
+
+    /****************************** Object ****************************/
+
+    // const id = Symbol('123');
+    // console.log(id);
+
+    // obj literals
+    const obj =
+    {
+        name: "Saliram",
+        "lastName" : "Saliram Chaudhary",
+        address: "Hasuliya",
+        age: 12,
+        gender: "Male",
+        [Symbol] : "key1",
+    }
+    // console.log(obj.address);
+    // console.log(obj["age"]);
+    // console.log(obj["lastName"]);
+    // console.log(obj[Symbol]);
+
+    // //update obj value
+
+    // obj.address = "Rampur";
+    // console.log(obj["address"]);
+
+    // Object.freeze(obj);
+
+
+
+    obj.User = function(){
+        console.log(`Hello js obj , ${this.lastName}`);
+    }
+    console.log(obj.User());
+
+
+    // Obj Singalton
+
+    // const objSing = new Object()
+
+    // const tinderUser = {}
+    // tinderUser.id = 123;
+    // tinderUser.name = "Saliram";
+    // tinderUser.isLogin = false;
+    // // console.log(tinderUser);
+
+    // Nested Object
+    // const User = {
+    //     email : "saliram@gmail.com",
+    //     fullName : {
+    //         userName : {
+    //             firstName : "Saliram",
+    //             lastName : "Chaudhary",
+    //         }
+    //     }
+    // }
+    // // console.log(User.fullName.userName.lastName);
+
+    // const obj1 = {name : "Apple", weight : "20kg"};
+    // const obj2 = {fruit : "Apple", taste : "sweet"};
+
+    // const obj3 = {obj1, obj2};
+
+    // const obj3 = Object.assign({},obj1,obj2);
+
+    // const obj3 = {...obj1, ...obj2};
+    // console.log(obj3);
+
+    // console.log(tinderUser);
+    // console.log(Object.keys(tinderUser));
+    // console.log(Object.values(tinderUser));
+    // console.log(Object.entries(tinderUser));
+    // console.log(tinderUser.hasOwnProperty('name');
+
+
+
+
+    /* Obj Desturcture */
+
+    // const De_Structure = {
+    //     course : "JavaScript",
+    //     price : 1000,
+    //     duration : "4 Month",
+    // }
+
+    // const {duration} = De_Structure
+    // console.log(duration);
+
+    // Destruct method
+
+// const obj = {
+//     name: "Saliram",
+//     obj1: {
+//         address: "Hasuliya"
+//     }
+// }
+
+// const {obj1 :{address}} = obj
+// console.log(address);
+
+
+</script>
