@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
 import Header from '../src/components/Header'
-import Card from '../src/components/Card'
+import CardList from '../src/components/CardList'
 
 function App() {
   return (
     <>
         <Header/>
-        <Card/>
+        <CardList/>
     </>
   )
 }

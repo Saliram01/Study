@@ -1,11 +1,11 @@
-import React, { useLayoutEffect } from 'react'
+import React from 'react'
 import {NavLink} from 'react-router-dom'
 import {useState , useEffect} from 'react'
 
 export function Meme(){
     const [memeData , setMeme] = useState([])
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
         .then((res) => res.json())
         .then((memesData) => {
@@ -19,7 +19,7 @@ export function Meme(){
                 <div className="flex flex-wrap justify-center items-center gap-8">
                     {memeData.map((data,i) => {
                         return(
-                            <NavLink to={`/meme/${i}`} className="flex justify-center items-center flex-col border-2 p-4 rounded-md" key={i}>
+                            <NavLink className="flex justify-center items-center flex-col border-2 p-4 rounded-md" key={i}>
                                 <img src={data.url} className='w-52 h-52 object-cover mb-4' />
                                 <p>{data.name}</p>
                             </NavLink>

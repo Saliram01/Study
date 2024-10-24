@@ -1,9 +1,13 @@
 import React from 'react'
 
+
 function Header() {
+  
   return (
-    <div className='product'>Product List</div>
+    <div className='product'>
+      <h2>Product List</h2>
+    </div>
   )
 }
 
-export default Header
+export default Header;

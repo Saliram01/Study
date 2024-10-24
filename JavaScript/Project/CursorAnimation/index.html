@@ -21,15 +21,13 @@
     <div class="ball"></div>
     <script>
         let ball = document.querySelector('.ball');
-        window.addEventListener('mousemove', function (e) {
+        document.addEventListener('mousemove', function (e) {
             let x = e.clientX;
             let y = e.clientY;
-            ball.animate([{ transform : `translate(${x}px, ${y}px)`}],{duration : 2000 }) // 3s
-            
-            // setTimeout(() => {
-            //     ball.style.transform = `translate(${x}px, ${y}px)`;
-            // },200)
-
+            ball.animate(
+                { transform : `translate(${x}px, ${y}px)`},
+                {duration : 2000 } // 3s
+            ) 
         })
     </script>
 </body>

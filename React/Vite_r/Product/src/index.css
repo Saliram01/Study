@@ -4,3 +4,6 @@
     box-sizing: border-box;
   }
   
+  body {
+    background-color: rgb(92, 57, 92);
+  }

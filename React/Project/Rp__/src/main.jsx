@@ -22,7 +22,6 @@ import UseMemo from "./components/hooks/UseMemo";
 import UseCallback from './components/hooks/useCallback/UseCallback';
 import UseReducer from "./components/hooks/UseReducer";
 import { Meme } from "./components/p_list/Meme";
-import MemeDetail from "./components/p_list/MemeDetail";
 import UseLayoutEffect from "./components/hooks/UseLayoutEffect";
 import UseLocalStorage from "./components/hooks/cHook/UseLocalStorage";
 
@@ -114,10 +113,6 @@ const router = createBrowserRouter([
       {
         path : 'meme',
         element : <Meme/>
-      },
-      {
-        path : 'meme/:id',
-        element : <MemeDetail/>
       },
     ]
   }
