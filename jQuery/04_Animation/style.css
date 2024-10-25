@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 25px;
+    text-align: center;
+    background-color : slategrey;
+    color: #ffffff;
+}
+.btn {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 5px;
+}
+
+.box {
+    width: 600px;
+    padding: 100px;
+    background-color: sandybrown;
+    text-align: center;
+    margin: 20px 450px;
+}
+
+.but {
+    cursor: pointer;
+}
+
+#animate {
+    width: 100px;
+    padding: 20px;
+    background-color: sandybrown;
+    text-align: center;
+    /* margin: 0 50px; */
+    position: relative;
+}
