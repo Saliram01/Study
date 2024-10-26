@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body style="margin: 0; background-color: gray;">
+
+    <header style="background-color: teal; padding: 8px;color: #fff; text-align: center;">
+        <h2>jQuery | Ajax</h2>
+    </header>
+
+    <form id="postForm" action="https://jsonplaceholder.typicode.com/posts" style="padding: 10px 20px;">
+        <input type="text" id="title" placeholder="Title"><br>
+        <textarea name="" id="body" placeholder="Body"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="container" style="padding: 10px 20px; color: #fff;">
+        <h3 class="result"></h3>
+        <ul id="users">
+
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // xhr data
+            $('.result').load('test.html',function(responseTxt,statusTxt,xhr) {
+                if(statusTxt == "success"){alert("It went fine")}
+                else if(statusTxt == 'error'){alert("Error",xhr.statusTxt)};
+            });
+
+            $.get('test.html',function(data){
+                $('.result').html(data);
+            })
+
+            // user json data print in document 
+            $.getJSON('users.json',function(data){
+                $.each(data,function(i ,user){
+                    $('#users').append(`<li>${user.firstName}</li>`)
+                })
+            })
+
+            // Fetch data through Ajax
+            $.ajax({
+                method: 'GET',
+                url: 'https://jsonplaceholder.typicode.com/posts',
+                dataType: 'json',
+            }).done(function (data) {
+                $.map(data, function (e) {
+                    $('#users').append(`
+                    <h2>${e.id} : ${e.title}</h2>
+                    <p>==> ${e.body}</p>
+                    `)
+                })
+            })
+        })
+
+        // Post Form
+        $('#postForm').submit(function (e) {
+            e.preventDefault();
+            const title = $('#title').val();
+            const body = $('#body').val();
+            const url = $(this).attr('action');
+
+            $.post(url, { title: title, body: body }).done(function (data) {
+                console.log("Post saved");
+                console.log(data);
+            })
+        })
+    </script>
+</body>
+
+</html>
