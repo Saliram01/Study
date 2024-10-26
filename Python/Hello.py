@@ -104,6 +104,119 @@
 # print('Invalid email') if('email' not in email) else print('Valid email')
 
 # ARRAY SEARCH CHECK USING MEMBERSHIP OPERATOR      
-a = [10,20,30,40,50]
-s = int(input("Enter a number : "))
-print("Valid Search") if(s in a) else print("Invalid Search")
+# a = [10,20,30,40,50]
+# s = int(input("Enter a number : "))
+# print("Valid Search") if(s in a) else print("Invalid Search")
+
+# Condition Statement
+# print("===============Menu===============")
+# print("1.Min\n2.Max\n3.Swap")
+# print("==================================")
+# choice = int(input("Enter your choice number : "))
+# if(choice == 1):
+#     a = int(input("Enter numbe a : "))
+#     b = int(input("Enter numbe b : "))
+#     print("Minimum number is :", min(a,b))
+# elif(choice == 2):
+#     a = int(input("Enter numbe a : "))
+#     b = int(input("Enter numbe b : "))
+#     print("Maximum number is :", max(a,b))
+# elif(choice == 3):
+#     a = int(input("Enter numbe a : "))
+#     b = int(input("Enter numbe b : "))
+#     print("Before swapping : %d %d"%(a,b))
+#     a,b = b,a
+#     print("After swap is : %d %d"%(a,b))
+# else:
+#     print("Invalid Choice")
+
+# Loop
+# n = int(input("Enter number : "))
+# i = 1
+# while i <= n :
+#     print(i,end=" ")
+#     # print(i*i,end=" ")
+#     i += 1
+
+# Wap to print table of number
+# n = int(input("Enter a number : "))
+# i = 1
+# while i <= 10 :
+#     print( n , "*" , i , "=" ,i * n)
+#     i += 1
+
+# Wap to print fibonacii series
+# a = 0
+# b = 1
+# n = int(input("Enter number : "))
+# i = 0
+# while i < n :
+#     c = a + b
+#     a = b
+#     b = c
+#     print(c,end=" ")
+#     i += 1
+
+#Wap to print factorial of number 
+# n = int(input("Enter a number : "))
+# fact = 1
+# while n != 0 :
+#     fact *= n
+#     n = n - 1
+# print("Factorial number is : ",fact)
+
+# Wap to check palindrone number or not
+# The original number and output number which are equal called palindrone number.
+# n = int(input("Enter a number : "))
+# s = 0
+# m = n #eg : 252 , 121
+# while(n != 0):
+#     r = n % 10
+#     s = s * 10 + r
+#     n = n // 10
+# print("Palindrone number") if(m == s) else print("Not a palindrone number")
+
+# Wap to check number is armstrong number or not
+#The number which are each self cube number sum is equalto user input
+# n = int(input("Enter a number : "))
+# m = n #eg 153 => 1^3 = 1, 5^3 = 125 , 3^3 = 27 => 1 + 125 + 27 = 153 == 153
+# s = 0
+# while(n != 0):
+#     r = n % 10
+#     s = s + (r*r*r)
+#     n = n // 10
+# if m == s :
+#     print("Armstrong number")
+# else :
+#     print("Not Armstrong number")
+
+# For loop
+# for i in range(50):
+#     print(i,end=" ")
+
+# for i in range(1,51):
+#     print(i,end=" ")
+
+# for i in range(10):
+#     print(i*i,end=" ")
+
+# n = int(input("Enter number : "))
+# for i in range(1,11):
+#     print(n , "*" , i , "=" , i * n)
+
+# for i in range(10,0,-1): # reverse loop
+#     print(i)
+
+# Table 
+# n = int(input("Enter a number : "))
+# for i in range(1,n,1):
+#     print("\nTable of :",i)
+#     for j in range(1,11,1):
+#         print(i , "*" , j , "=" , i * j)
+
+# Pattern print
+n = int(input("Enter number :"))
+for i in range(1,n,1):
+    for j in range(1,i+1,1):
+        print("*",end=" ")
+    print()
