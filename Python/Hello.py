@@ -215,8 +215,11 @@
 #         print(i , "*" , j , "=" , i * j)
 
 # Pattern print
-n = int(input("Enter number :"))
-for i in range(1,n,1):
-    for j in range(1,i+1,1):
-        print("*",end=" ")
-    print()
+# n = int(input("Enter number :"))
+# for i in range(1,n,1):
+#     for j in range(1,i+1,1):
+#         print("*",end=" ")
+#     print()
+
+num = int(input("Enter number : "))
+print("Number is even" if num % 2 == 0 else "Number is odd")
