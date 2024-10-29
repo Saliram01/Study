@@ -4,14 +4,28 @@
     box-sizing: border-box;
     font-family: serif;
 }
+:root {
+    --orange-050 : #ffe8d9;
+    --orange-100 : #ffd0b5;
+    --orange-200 : #ffb088;
+    --orange-300 : #ff9466;
+    --orange-400 : #f9703e;
+    --orange-500 : #f35627;
+    --orange-600 : #de3a11;
+    --orange-700 : #c52707;
+    --orange-800 : #ad1d07;
+    --orange-900 : #841003;
+}
+
 body{
-    background-color: gray;
+    /* background-color: var(--green-600); */
+    background-image : linear-gradient(236deg,gray,purple);
 }
 .container {
    display: flex;
    justify-content: center;
-    align-items: center;
-    height: 100vh;
+   align-items: center;
+   height: 100vh;
 }
 .box{
     box-shadow: 0 0 4px rgb(255, 255, 255);
@@ -27,11 +41,17 @@ body{
     margin: 10px 0;
     padding: 0 15px;
     text-align: end;
-    font-size: xx-large;
+    font-size: calc(1.2em * 1.2 * 1.2);
     border: none;
     border-radius: 5px;
     outline: none;
-    box-shadow: 0 0 5px rgb(255, 255, 255);
+    box-shadow:inset 0 0 4px 0px rgb(207, 207, 207);
+    background: transparent;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: #ffffff;
 }
 .btn{
     margin-top: 25px;
@@ -45,11 +65,27 @@ body{
     border: none;
     font-size: 18px;
     font-weight: bold;
-    box-shadow: 0 0 8px rgb(255, 254, 254);
+    box-shadow: 0 0 4px rgb(255, 254, 254);
     cursor: pointer;
 }
 .btn button:active{
     background-color: #ccc;
+}
+
+.k {
+    color: #ffffff;
+}
+
+.operator {
+    background-image: linear-gradient(360deg,rgb(141, 116, 120),rgb(173, 135, 65));
+}
+
+.keys {
+    background-image: -webkit-linear-gradient(360deg,rgb(135, 135, 122),rgb(104, 87, 104));
+}
+
+.equal {
+    background-color: red;
 }
 @media (max-width: 667px){
     .box{

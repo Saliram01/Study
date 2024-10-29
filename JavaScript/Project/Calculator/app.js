@@ -12,7 +12,11 @@ function remove() {
 function Calculate(){
     try{
         let display = document.querySelector('#display');
-        display.value = eval(display.value);
+        if(display.value === ''){
+            return;
+        }else {
+            display.value = eval(display.value);
+        }
     }
     catch(err){
         clearDisplay.value(err);
