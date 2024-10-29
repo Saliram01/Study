@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #616161;
+        }
+
+        #main {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #81ecec;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .note {
+            width: 400px;
+            height: 400px;
+            background-color: #fff;
+            margin: 4rem 2rem 1rem;
+        }
+
+        .tool {
+            background-color: #2d3436;
+            width: 100%;
+            color: white;
+            padding: 5px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .tool i {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .note textarea {
+            border: none;
+            width: 100%;
+            height: 100%;
+            resize: none;
+            outline: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        #btn {
+            position: fixed;
+            right: 25px;
+            top: 10px;
+            background-color: #2d3436;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        #btn:active {
+            background-color: #4d5659;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn"><i class="fa-solid fa-plus"></i> Add Note</button>
+    <div id="main"></div>
+    <script>
+        const main = document.querySelector('#main');
+        const add = document.querySelector('#btn');
+
+        add.addEventListener('click',function() {
+            addBtn();
+        })
+
+        function saveNotes() {
+            const notes = document.querySelectorAll('.note textarea');
+            const data = [];
+            notes.forEach((note) => {
+                data.push(note.value);
+            })
+            if(data.length === 0){localStorage.removeItem('notes')}
+            else{localStorage.setItem('notes',JSON.stringify(data));}
+        }
+
+        (function(){
+            const lsNotes =JSON.parse(localStorage.getItem('notes'));
+            if(lsNotes === null) {
+                addBtn();
+            }
+            else {
+                lsNotes.forEach((lsNotes) => {
+                addBtn(lsNotes);
+            })
+            }
+            
+            if(lsNotes.length == 0){localStorage.removeItem('notes')} else{addBtn()}
+        })();
+
+        function addBtn(text = '') {
+            const note = document.createElement('div');
+            note.classList.add('note');
+
+            note.innerHTML = `
+            <div class="tool">
+                <i class="save fa-solid fa-floppy-disk"></i>
+                <i class="trash fa-solid fa-trash"></i>
+            </div>
+            <textarea>${text}</textarea>
+            `;
+
+            note.querySelector('.trash').addEventListener('click',function() {
+                note.remove();
+                saveNotes();
+            })
+
+            note.querySelector('.save').addEventListener('click',function() {
+                saveNotes();
+            })
+            note.querySelector('textarea').addEventListener('focusout',() => {
+                saveNotes();
+            })
+            main.appendChild(note);  
+            saveNotes();
+        }
+
+        
+    </script>
+</body>
+</html>
