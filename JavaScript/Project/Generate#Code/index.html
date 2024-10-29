@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            transition:  1s;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 30rem;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            border: none;
+            color: #fff;
+            padding: 8px;
+            border-radius: 50px;
+            cursor: pointer;
+            background-color: #313131;
+        }
+
+        button:active {
+            background-color: #6e6969;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h2 id="color-code">#515151</h2>
+            <button id="btn">Click Me</button>
+        </div>
+    </div>
+    <script>
+        function GetColor(){
+            const randomNumber = Math.floor(Math.random() * 5156654648);
+            const hexCode = "#" + randomNumber.toString(16);
+            document.querySelector('#color-code').innerText = hexCode;
+            document.querySelector('body').style.backgroundColor = hexCode;
+        }
+
+        document.querySelector('#btn').addEventListener('click',function() {
+            GetColor();
+        })
+
+        GetColor()
+    </script>
+</body>
+</html>
