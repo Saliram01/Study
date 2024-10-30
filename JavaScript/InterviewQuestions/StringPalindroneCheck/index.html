@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Palindrone Check</title>
+</head>
+<body style="background-color: #515151;">
+    <script>
+        // racecar
+        function stringPalindrone(pali) {
+            const rev = pali.split('').reverse().join('');
+            if(pali === rev) {
+                console.log("String is palindrone");
+            }
+            else {
+                console.log("String is not a palindrone");
+            }
+        }
+        stringPalindrone('racecar');
+        stringPalindrone('rara');
+    </script>
+</body>
+</html>

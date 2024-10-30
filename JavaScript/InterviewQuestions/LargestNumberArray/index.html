@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Largest Number in Array</title>
+</head>
+<body style="background-color: #515151;">
+    <script>
+        const arr = [3, 5, 1, 8, 2];
+        let x = arr[0];
+       for(let i = 0; i < arr.length; i++) {
+        if(arr[i] >= x){
+            x = arr[i]
+        }
+       }
+        console.log(x);
+    </script>
+</body>
+</html>
