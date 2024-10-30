@@ -5,15 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>String Transformer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>String Transformer</h1>
     <div class="field">
-        <input type="text" placeholder="Enter the sentence with space">
+        <input id="myInput" type="text" placeholder="Enter the sentence with space" required>
+
         <div class="sentences">
-            
+            <span>Lower Case</span>
+            <p class="lowercase"></p>    
         </div>
+
+        <div class="sentences">
+            <span>Upper Case</span>
+            <p class="uppercase"></p>    
+        </div>
+
+        <div class="sentences">
+            <span>Camel Case</span>
+            <p class="camelcase"></p>    
+        </div>
+
+        <div class="sentences">
+            <span>Pascal Case</span>
+            <p class="pascalcase"></p>    
+        </div>
+
+        <div class="sentences">
+            <span>Snake Case</span>
+            <p class="snakecase"></p>    
+        </div>
+
+        <div class="sentences">
+            <span>Kabab Case</span>
+            <p class="kababcase"></p>    
+        </div>
+
+        <div class="sentences">
+            <span>Trim</span>
+            <p class="trim"></p>    
+        </div>
+        
     </div>
 </body>
 </html>

@@ -5,15 +5,14 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #919191;
 }
 
 h1{
-    background-color: turquoise;
-    height: 5rem;
-    line-height: 5rem;
+    padding: 15px;
     text-align: center;
-    color: brown;
+    color: rgb(21, 81, 88);
+    box-shadow:  0 0 4px #616161;
 }
 
 .field {
@@ -24,9 +23,56 @@ h1{
 }
 
 input {
-    width: 100%;
-    padding: 12px;
+    width: 80%;
+    padding: 8px;
     margin: 15px 0;
-    width: 1000px;
-    outline-color: yellowgreen;
+    font-size: 1em;
+    outline-color: rgb(72, 75, 65);
+}
+
+.sentences {
+    margin: 8px 0;
+    width: 80%;
+}
+
+span {
+    background-color: #616161;
+    padding: 2px;
+    color: #ffffff;
+}
+
+.lowercase , .uppercase , .camelcase,.pascalcase, .kababcase,.snakecase ,.trim {
+    background-color: #F5F5DC;
+    border: 1px solid;
+    padding: 4px;
+    overflow: hidden;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+@media(max-width: 425px) {
+    input {
+        width: 95%;
+        padding: 8px;
+    }
+    
+    .sentences {
+        margin: 8px 0;
+        width: 95%;
+    }
+    .lowercase , .uppercase , .camelcase,.pascalcase, .kababcase,.snakecase ,.trim {
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    input {
+        width: 60%;
+        padding: 8px;
+    }
+    
+    .sentences {
+        margin: 10px 0;
+        width: 60%;
+    }
 }
