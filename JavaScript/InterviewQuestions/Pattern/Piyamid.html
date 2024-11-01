@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piramid</title>
+</head>
+
+<body style="background-color: #515151;">
+    <script>
+        function printPyramid(height) {
+            for (let i = 1; i <= height; i++) {
+                console.log(' '.repeat(height - i) + '*'.repeat(2 * i - 1));
+            }
+        }
+        printPyramid(5);
+
+    </script>
+</body>
+
+</html>
