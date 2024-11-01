@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ternary operator</title>
 </head>
+
 <body>
     <script>
         const gender = 'F'
-        const userName = `${gender.toLocaleLowerCase() === 'f'? 'She' : 'He'} is a student`;
+        const userName = `${gender.toLocaleLowerCase() === 'f' ? 'She' : 'He'} is a student`;
         console.log(userName);
 
-        let  num = 5 < 1 ? 'true' : '' ? '1' : '0'
+        let num = 5 < 1 ? 'true' : '' ? '1' : '0'
         console.log(num);
+
+        // check vowel letter
+        function VowelLetterCheck(word) {
+            let letter = word;
+            letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' ? console.log("Letter is Vowel") : console.log("Letter is Consonant");
+        } VowelLetterCheck('a')
     </script>
 </body>
+
 </html>
