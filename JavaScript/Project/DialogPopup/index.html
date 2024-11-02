@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog PopUp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #616161;
+        }
+
+        header {
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 0 5px #fff;
+            color: #fff;
+        }
+
+        .btn-show {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 0;
+        }
+
+        .show {
+            padding: 8px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: #4a3333;
+            background-color: greenyellow;
+        }
+
+        .show:active {
+            background-color: rgb(133, 201, 32);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 0 5px #fff;
+            text-align: center;
+            gap: 10px;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .s {
+            display: block;
+        }
+
+        .h {
+            display: none;
+        }
+
+        .box h2 {
+            border-bottom: 2px solid;
+        }
+
+        .box p {
+            margin: 12px 0;
+        }
+
+        .hide {
+            padding: 7px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            background-color: red;
+        }
+
+        .hide:active {
+            background-color: rgb(255, 112, 112);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dialog Popup</h1>
+    </header>
+    <div class="btn-show">
+        <button class="show">Show Dialog</button>
+    </div>
+    <div class="container">
+        <main class="box">
+            <h2>Header</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, sint vitae! Blanditiis inventore
+                vitae rerum laudantium, voluptas iste dolor asperiores.</p>
+            <button class="hide">Close Dialog</button>
+        </main>
+    </div>
+    <script>
+        const box = document.querySelector('.box');
+        document.querySelector('.show').addEventListener('click', () => {
+            box.classList.remove('h');
+            box.classList.add('s');
+        })
+
+        document.querySelector('.hide').addEventListener('click', () => {
+            box.classList.remove('s');
+            box.classList.add('h');
+        })
+    </script>
+</body>
+
+</html>
