@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #616161;
+        }
+
+        .container {
+            width: 350px;
+            height: 200px;
+            box-shadow: 0 0 5px;
+            color: #fff;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        h2 {
+            font-weight: 500;
+            word-spacing: 5px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+        }
+
+        button:active {
+            background-color: #d6c6c6;
+        }
+
+        p {
+            background-color: #414141;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>OTP Generator</h2>
+        <button id="otpgen">Generate OTP</button>
+        <p></p>
+    </div>
+    <script>
+        function OTPGenerator(otp) {
+            let newOtp = "";
+            for(let i = 1; i <= otp; i++) {
+                 newOtp += Math.floor(Math.random() * i + 1 )
+                 if(i < otp) {newOtp += "  "}
+            }
+            document.querySelector('p').innerText = newOtp;
+        } OTPGenerator(6)
+        document.querySelector('#otpgen').addEventListener('click',() => {OTPGenerator(6)})
+    </script>
+</body>
+</html>
