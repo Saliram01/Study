@@ -10,7 +10,7 @@ const products = [
 
 // Function to display products in the DOM
 function displayProducts(productsToDisplay) {
-  const productList = document.getElementById('product-list');
+  const productList = document.getElementById('product-list'); 
   productList.innerHTML = ''; // Clear previous products
 
   productsToDisplay.forEach(product => {
