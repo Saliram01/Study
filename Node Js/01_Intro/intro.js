@@ -4,4 +4,4 @@ const node = {
   release_date : ' 27 May 2009',
   made : 'v8 is written in c++',
 }
-console.log(introd.node);
+console.log(node.definition);
