@@ -1,11 +1,13 @@
 .product {
-  background-color: rgb(143, 85, 143);
   display: flex;
+  width: 1320px;
+  margin: auto;
   justify-content: space-around;
   align-items: center;
-  padding: 12px;
+  padding: 15px;
   font-size: 1.5rem;
   color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .card-container {
@@ -39,11 +41,10 @@
 
 .card img {
   object-fit: contain;
-  /* mix-blend-mode: color-burn; */
 }
 
 .input-field {
-  margin: 10px 95px;
+  margin: 15px 95px;
 }
 
 .input-field input {
@@ -51,4 +52,17 @@
   height: 35px;
   padding: 0 5px;
   outline: none;
+}
+
+.loading {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-title {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
 }

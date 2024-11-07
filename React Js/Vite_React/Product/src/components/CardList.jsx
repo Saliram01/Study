@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import Input from "./Input";
+import Loading from './Loading'
 
 function CardList() {
   const [card, setCard] = useState([]);
@@ -14,7 +15,7 @@ function CardList() {
       });
   }, []);
 
-  return (
+  return card.length === 0 ? <Loading/> : (
     <>
       <Input setQuery={setSearch} />
       <div className="card-container">
