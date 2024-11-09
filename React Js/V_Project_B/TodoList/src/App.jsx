@@ -1,16 +1,32 @@
+import React from "react";
 import AddTodo from "./components/AddTodo";
 import AppName from "./components/AppName";
-import TodoItem from "./components/TodoItem";
+import ItemsContainer from "./components/ItemsContainer";
+import { useState } from "react";
+import WelcomeMsg from "./components/WelcomeMsg";
 
 function App() {
+
+  const [addTodoItems, setTodoItems] = useState([]);
+
+  const handleNewItem = (itemName,itemDueDate) => {
+      const newTodoItems = [...addTodoItems,{name : itemName, date: itemDueDate}];
+      setTodoItems(newTodoItems)
+  }
+
+  function handleDeleteItems(TodoItemName) {
+    const newTodoItems = addTodoItems.filter((itm) =>itm.name != TodoItemName)
+    setTodoItems(newTodoItems);
+  }
+  
+
   return (
     <center className="border w-50 p-3 m-auto mt-5 bg-white shadow-lg">
       <AppName title="Dodo React App" />
-      <AddTodo />
-
+      <AddTodo onNewItem={handleNewItem}/>
+      {addTodoItems.length === 0 && <WelcomeMsg/>}
       <div className="items-container">
-        <TodoItem title="By Milk" date="4/10/2024" btnName="Delete" />
-        <TodoItem title="Go To School" date="5/10/2024" btnName="Delete" />
+        <ItemsContainer Todo={addTodoItems} onDeleteClick={handleDeleteItems}/>
       </div>
     </center>
   );
