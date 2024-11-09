@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./App.css";
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
