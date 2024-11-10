@@ -1,4 +1,4 @@
-import {useState, createContext } from 'react'
+import { useReducer , createContext } from 'react';
 
 export const TodoItemsContext = createContext(
     {
@@ -9,16 +9,46 @@ export const TodoItemsContext = createContext(
 );
 
 function TodoItemsContextProvider({children}) {
-    const [addTodoItems, setTodoItems] = useState([]);
+    
+    // USING useState
+    // const [addTodoItems, setTodoItems] = useState([]);
+    // const addNewItem = (itemName,itemDueDate) => {
+        
+    //     setTodoItems((currentValue) => [...currentValue,{name : itemName, date: itemDueDate}]);
+    // }
+  
+    // function deleteItems(TodoItemName) {
+    //     console.log(TodoItemName);
+    //   setTodoItems(addTodoItems.filter((itm) =>itm.name != TodoItemName));
+    // }
 
-    const addNewItem = (itemName,itemDueDate) => {
-        setTodoItems((currentValue) => [...currentValue,{name : itemName, date: itemDueDate}]);
+    // USING useReducer
+
+    const todoItemReducer = (currentTodoItem, action) => {
+
+        let newTodoItem = currentTodoItem;
+
+        if(action.type === 'NEW_ITEM') {
+            newTodoItem = [...currentTodoItem,{name : action.payload.itemName, date : action.payload.itemDueDate}]
+        }
+        
+
+        else if (action.type === "DEL_ITEM") {
+            newTodoItem = currentTodoItem.filter((itm) =>itm.name != action.payload.itemName);
+        }
+        return newTodoItem;
     }
+
+    const [addTodoItems, dispatch] = useReducer(todoItemReducer, []);
   
-    function deleteItems(TodoItemName) {
-      setTodoItems(addTodoItems.filter((itm) =>itm.name != TodoItemName));
-    }
-  
+    const addNewItem = (itemName, itemDueDate) => {
+        dispatch({type : "NEW_ITEM",payload : {itemName,itemDueDate}});
+    };
+
+    const deleteItems = (todoItemName) => {
+        dispatch({type : "DEL_ITEM",payload : {itemName : todoItemName}});
+    };
+
     return (
         <TodoItemsContext.Provider value={{addTodoItems,addNewItem,deleteItems}}>
             {children}
