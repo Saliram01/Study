@@ -1,0 +1,110 @@
+const boxSingle = document.querySelector('#single');
+const single = document.querySelector('#btnn');
+
+const box = document.querySelector('#container');
+const multiple = document.querySelector('#btn');
+
+
+single.addEventListener('click',() => {
+    let u = document.querySelector('.single').value;
+    for(let j = 1; j <= 10; j++) {
+        const container = document.createElement('div');
+        const p = document.createElement('p');
+        boxSingle.classList.add('border-2');
+        p.classList.add('mb-2')
+        p.innerText = `Table of : ${j}`;
+        container.classList.add('flex');
+        container.classList.add('justify-between');
+
+        const operand = document.createElement('div');
+        operand.classList.add('px-2');
+        const ope = document.createElement('div');
+        ope.classList.add('px-2');
+        const count = document.createElement('div');
+        count.classList.add('px-2');
+        const equal = document.createElement('div');
+        equal.classList.add('px-2'); 
+        const total = document.createElement('div');
+        total.classList.add('px-2');
+
+        container.append(operand,ope,count,equal,total);
+
+        let div1 = document.createElement('div');
+        div1.innerText = u;
+
+        let div2 = document.createElement('div');
+        div2.innerText = "*";
+
+        let div3 = document.createElement('div');
+        div3.innerText = j;
+
+        let div4 = document.createElement('div');
+        div4.innerText = "=";
+
+        let div5 = document.createElement('div');
+        div5.innerText = u * j;
+
+        operand.append(div1);
+        ope.append(div2);
+        count.append(div3);
+        equal.append(div4);
+        total.append(div5);
+        boxSingle.append(container);
+        document.querySelector('.single').value = '';
+    }
+})
+
+
+// MULTIPLE TABLE
+multiple.addEventListener('click',() => {
+    let user = document.querySelector('.multiple').value;
+    for(let i = 1; i <= user; i++) {
+        const container = document.createElement('div');
+        const p = document.createElement('p');
+        p.classList.add('mb-2')
+        p.innerText = `Table of : ${i}`;
+        container.classList.add('flex');
+        container.classList.add('border-2');
+        container.classList.add('justify-between');
+        container.classList.add('mb-4');
+        const operand = document.createElement('div');
+        operand.classList.add('p-2');
+        const ope = document.createElement('div');
+        ope.classList.add('p-2');
+        const count = document.createElement('div');
+        count.classList.add('p-2');
+        const equal = document.createElement('div');
+        equal.classList.add('p-2'); 
+        const total = document.createElement('div');
+        total.classList.add('p-2');
+
+        container.append(operand,ope,count,equal,total);
+        
+        for(let j = 1; j <= 10; j++) {
+
+            let div1 = document.createElement('div');
+            div1.innerText = i;
+
+            let div2 = document.createElement('div');
+            div2.innerText = "*";
+
+            let div3 = document.createElement('div');
+            div3.innerText = j;
+
+            let div4 = document.createElement('div');
+            div4.innerText = "=";
+
+            let div5 = document.createElement('div');
+            div5.innerText = i * j;
+
+            operand.append(div1);
+            ope.append(div2);
+            count.append(div3);
+            equal.append(div4);
+            total.append(div5);
+        }
+        box.append(p);
+        box.append(container);
+        document.querySelector('.multiple').value = '';
+    }
+})
