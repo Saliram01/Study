@@ -30,6 +30,7 @@ function Project() {
             <Link to={'/sign-up'}><ProjectList value='SignUpForm'/></Link>
             <Link to={'/meme'}><ProjectList value='Meme Generator'/></Link>
             <Link to={'/image'}><ProjectList value='Image Gallery'/></Link>
+            <Link to={'/todoList'}><ProjectList value='Todo Container'/></Link>
             </div>
 
         </div>
