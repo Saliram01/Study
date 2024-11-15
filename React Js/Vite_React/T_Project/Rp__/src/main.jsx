@@ -24,6 +24,7 @@ import UseReducer from "./components/hooks/UseReducer";
 import { Meme } from "./components/p_list/Meme";
 import UseLayoutEffect from "./components/hooks/UseLayoutEffect";
 import UseLocalStorage from "./components/hooks/cHook/UseLocalStorage";
+import ImageGallery from "./components/p_list/ImageGallery";
 
 // Plain Obj Routes
 const router = createBrowserRouter([
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
       {
         path: "useMemo",
         element: <UseMemo />,
+      },
+      {
+        path: "image",
+        element: <ImageGallery />,
       },
       {
         path: "useCallback",
