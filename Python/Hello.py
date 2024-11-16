@@ -48,7 +48,7 @@
 # str_template = "Name is {name}, age is {age}, and gender is {gender}"
 # print(str_template.format(name=name, age=age, gender=gender))
 
-# x = 15//2
+ #x = 15//2 
 # print(x) output : 7
 
 # CHECK GREATER NUMBER 
