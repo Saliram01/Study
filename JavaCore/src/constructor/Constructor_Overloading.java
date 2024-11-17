@@ -28,7 +28,7 @@ public class Constructor_Overloading {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		 Apple a = new Apple(); // default parameter
+//		 Apple a = new Apple(); // default parameter
 
         Apple a1 = new Apple("One"); // single parameter
         a1.print1();

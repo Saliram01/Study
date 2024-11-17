@@ -15,9 +15,8 @@ public class Parameterized_Constructor {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		Parameterized_Constructor pc; // declearation class refrence
+		Parameterized_Constructor pc;
 		pc = new Parameterized_Constructor("Saliram Chaudhary","Male");
 		pc.Print();
 	}
