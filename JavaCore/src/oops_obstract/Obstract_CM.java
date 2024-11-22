@@ -1,4 +1,4 @@
-package obstract;
+package oops_obstract;
 
 abstract class Area
 {

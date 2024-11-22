@@ -1,4 +1,4 @@
-package inheritance;
+package oops_inheritance;
 
 class A{
     void print_A(){

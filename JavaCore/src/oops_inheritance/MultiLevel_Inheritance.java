@@ -1,4 +1,4 @@
-package inheritance;
+package oops_inheritance;
 
 class Insect{
     void eat(){

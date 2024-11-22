@@ -1,4 +1,4 @@
-package project_class_object;
+package class_object;
 
 class Book {
 	

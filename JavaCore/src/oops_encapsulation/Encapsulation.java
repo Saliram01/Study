@@ -1,4 +1,4 @@
-package encapsulation;
+package oops_encapsulation;
 
 class Person {
     private String name;

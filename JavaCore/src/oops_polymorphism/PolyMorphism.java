@@ -1,4 +1,4 @@
-package polymorphism;
+package oops_polymorphism;
 
 class Animal
 {

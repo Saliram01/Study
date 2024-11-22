@@ -11,7 +11,7 @@ public class Prime {
 			
 			System.out.println(" Welcome to Prime Number Checker");
 			
-			// Taking input from the user
+			// Taking input from the user++
 			System.out.print(" Enter your number : ");
 			int num = input.nextInt();
 			
