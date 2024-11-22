@@ -28,12 +28,21 @@ public class While {
         // Print Table Using Loop
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter table num : ");
-        int num = sc.nextInt();
+//        System.out.print("Enter table num : ");
+//        int num = sc.nextInt();
+//        
+//        for(int f = 1; f <= 10; f++){
+//            System.out.println(num + " * " + f + " = " + num * f);
+//        }
         
-        for(int f = 1; f <= 10; f++){
-            System.out.println(num + " * " + f + " = " + num * f);
+        System.out.print("Enter your age : ");
+        int age = sc.nextInt();
+        while(age < 0 || age > 100) {
+        	System.out.print("Enter your age : ");
+        	age = sc.nextInt();
         }
+        System.out.println("Your age is " + age);
+        System.out.println("Program is end");
         sc.close(); 
 	}
 
