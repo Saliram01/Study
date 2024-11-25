@@ -50,6 +50,10 @@ function BlogDetail() {
               <p className="font-bold text-2xl">Brand :</p>
               {blgos.brand}
             </h2>
+            <h2 className="font-bold text-xl">
+              <p className="font-bold text-2xl">Price :</p>$
+              {blgos.price}
+            </h2>
             <h1 className="font-semibold">
               <p className="font-bold text-2xl">Description :</p>
               {blgos.description}

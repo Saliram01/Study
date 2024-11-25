@@ -32,7 +32,7 @@ public class PolyMorphism {
 		
 		Animal A ;
         A = new Elephant();
-        // A.Eat();
+         A.Eat();
 
         A = new Wolf();
         A.Eat();

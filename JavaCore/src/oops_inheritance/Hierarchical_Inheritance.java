@@ -21,6 +21,12 @@ class D extends A{
     }
 }
 
+class E extends A {
+	void print_D() {
+		System.out.println("Pring_ E class d and e method are same");
+	}
+}
+
 public class Hierarchical_Inheritance {
 
 	public static void main(String[] args) {
@@ -37,6 +43,10 @@ public class Hierarchical_Inheritance {
         D d = new D();
         d.print_A();
         d.print_D();
+        
+        E e = new E();
+        e.print_A();
+        e.print_D();
 	}
 
 }

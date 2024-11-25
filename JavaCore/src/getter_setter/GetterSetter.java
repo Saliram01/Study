@@ -1,18 +1,22 @@
 package getter_setter;
 
 public class GetterSetter {
-	 String name;
-	    int age;
-	    public String getName() {
+	 private String name;
+	 private int age;
+	    
+	    String getName() {
 	        return name;
 	    }
-	    public void setName(String name) {
+	    
+	    void setName(String name) {
 	        this.name = name;
 	    }
-	    public int getAge() {
+	    
+	    int getAge() {
 	        return age;
 	    }
-	    public void setAge(int age) {
+	    
+	    void setAge(int age) {
 	        this.age = age;
 	    }
 
