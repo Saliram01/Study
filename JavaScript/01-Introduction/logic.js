@@ -554,4 +554,13 @@ for (const key in arr) {
         console.log(parseInt("a",16)); // hexadecimal to binary
 
     */
+
+    // Two Array element sum of same index;
+    const arr1 = [1,2,3,4,5,6,7,8];
+    const arr2 = [1,2,3,4,5,6,7,8];
+
+    let newArr = arr1.map((el,i) => el + arr2[i]);
+    console.log(newArr);
+   
+
     
