@@ -1,0 +1,47 @@
+@media only screen and (min-width:200px) and (max-width:575px){
+    .btn-outer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 5px 0;
+        left: 0;
+        justify-content: center !important;
+    }
+
+    .btnwhatsup , .call{
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+
+    .banner-content {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .banner-content p, .banner-content ul li {
+        font-size: 14px;
+    }
+
+    .bannerContentBtn{
+        flex-direction: column;
+    }
+
+    .bannerContentBtn button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .bannerForm {
+        padding: 20px;
+    }    
+
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1170px;
+    }
+}
