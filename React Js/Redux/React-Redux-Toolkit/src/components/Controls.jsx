@@ -1,35 +1,33 @@
 import React from "react";
 import { useRef } from "react";
 import {useDispatch} from 'react-redux'
+import { privacyActions } from "../store/PrivacySlice";
+import { actions } from "../store/Slice";
 
 function Controls() {
-
   const refVal = useRef();
-  
+  const dispatch = useDispatch();
+
+  const handleIncreament = (() => {
+    dispatch(actions.increment());
+  })
+
+  const handleDecreament = (() => {
+    dispatch(actions.decrement());
+  })
+
   function handleAdd(){
-    const currentVal = refVal.current.value;
-    dispatch({type: 'ADD', payload: {num: currentVal}})
+    dispatch(actions.add(refVal.current.value));
     refVal.current.value = "";
   }
 
   function handleSub(){
-    const currentVal = refVal.current.value;
-    dispatch({type: 'SUB', payload: {num: currentVal}})
+    dispatch(actions.sub(refVal.current.value));
     refVal.current.value = "";
   }
 
-  const dispatch = useDispatch();
-
-  const handleIncreament = (() => {
-    dispatch({type : 'INCREMENT'});
-  })
-
-  const handleDecreament = (() => {
-    dispatch({type : 'DECREMENT'});
-  })
-
   const handleprivacyToggle = (() => {
-    dispatch({type: 'PRIVACY'});
+    dispatch(privacyActions.toggle());
   })
 
   return (<>
