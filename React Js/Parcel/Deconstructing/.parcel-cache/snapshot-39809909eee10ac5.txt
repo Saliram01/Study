@@ -1,26 +1,10 @@
-5254
+5257
 64D:\Study\React Js\Parcel\Deconstructing\node_modules\@ampproject133777867876473431 1
 91D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\runtime-js\lib\helpers\browser133777854884529404 1
 87D:\Study\React Js\Parcel\Deconstructing\node_modules\cosmiconfig\dist\getDirectory.d.ts133777854885161198 0
 99D:\Study\React Js\Parcel\Deconstructing\node_modules\posthtml\node_modules\htmlparser2\lib\index.js133777854879468855 0
 81D:\Study\React Js\Parcel\Deconstructing\node_modules\node-addon-api\noexcept.gypi133777854880198170 0
 48D:\Study\React Js\Parcel\Deconstructing\.babelrc133777868372650811 0
-83D:\Study\React Js\Parcel\Deconstructing\node_modules\lmdb\dependencies\lmdb-data-v1133777854878532384 1
-70D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\utils\src133777854886285757 1
-66D:\Study\React Js\Parcel\Deconstructing\node_modules\clone\LICENSE133777854879645700 0
-62D:\Study\React Js\Parcel\Deconstructing\node_modules\lru-cache133777867877751322 1
-105D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\features\passive-event-listener.js133777854895071355 0
-63D:\Study\React Js\Parcel\Deconstructing\node_modules\is-extglob133777854879539012 1
-100D:\Study\React Js\Parcel\Deconstructing\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\midl.h133777854889602458 0
-84D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\regions\MP.js133777854894501065 0
-96D:\Study\React Js\Parcel\Deconstructing\node_modules\@babel\types\lib\validators\validate.js.map133777867880568152 0
-64D:\Study\React Js\Parcel\Deconstructing\node_modules\safe-buffer133777854880007261 1
-97D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc\helpers\_\_async_generator\package.json133777854890682893 0
-84D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\regions\BM.js133777854886002500 0
-67D:\Study\React Js\Parcel\Deconstructing\node_modules\domelementtype133777854881011390 1
-72D:\Study\React Js\Parcel\Deconstructing\node_modules\color-name\index.js133777854878820908 0
-64D:\Study\React Js\Parcel\Deconstructing\node_modules\js-yaml\lib133777854883782661 1
-52D:\Study\React Js\Parcel\Deconstructing\package.json133777868559357645 0
 78D:\Study\React Js\Parcel\Deconstructing\node_modules\type-fest\ts41\index.d.ts133777854882623583 0
 68D:\Study\React Js\Parcel\Deconstructing\node_modules\posthtml-render133777854880070704 1
 65D:\Study\React Js\Parcel\Deconstructing\node_modules\htmlnano\lib133777854886401395 1
@@ -29,8 +13,12 @@
 59D:\Study\React Js\Parcel\Deconstructing\node_modules\@lezer133777854864020432 1
 94D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\reporter-dev-server\src\Server.js133777854880721218 0
 87D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\optimizer-css\package.json133777854879973246 0
+79D:\Study\React Js\Parcel\Deconstructing\node_modules\node-addon-api\except.gypi133777854879953261 0
+79D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\transformer-js\src133777854880208227 1
+76D:\Study\React Js\Parcel\Deconstructing\node_modules\posthtml-parser\license133777854878501225 0
+47D:\Study\React Js\Parcel\Deconstructing\App.css133778508799239142 0
 83D:\Study\React Js\Parcel\Deconstructing\node_modules\detect-libc\lib\detect-libc.js133777854880615048 0
-46D:\Study\React Js\Parcel\Deconstructing\App.js133777948266343366 0
+46D:\Study\React Js\Parcel\Deconstructing\App.js133778518745892136 0
 106D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\runtime-js\lib\helpers\browser\wasm-loader.js133777854884546481 0
 106D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\features\comparedocumentposition.js133777854889410832 0
 90D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\features\wasm-gc.js133777854898700559 0
@@ -46,7 +34,7 @@
 108D:\Study\React Js\Parcel\Deconstructing\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\midl.c133777854885699807 0
 78D:\Study\React Js\Parcel\Deconstructing\node_modules\lines-and-columns\LICENSE133777854878421263 0
 74D:\Study\React Js\Parcel\Deconstructing\node_modules\.bin\browserslist.cmd133777855000961984 0
-44D:\Study\React Js\Parcel\Deconstructing\dist133777948266932285 1
+44D:\Study\React Js\Parcel\Deconstructing\dist133778518580372831 1
 91D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc\helpers\cjs\_class_call_check.cjs133777854882799415 0
 86D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\src\public\Target.js133777854890207609 0
 61D:\Study\React Js\Parcel\Deconstructing\node_modules\entities133777854885380614 1
@@ -85,6 +73,22 @@
 71D:\Study\React Js\Parcel\Deconstructing\node_modules\process\browser.js133777858927577001 0
 91D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\features\css-zoom.js133777854891345825 0
 57D:\Study\React Js\Parcel\Deconstructing\package-lock.json133777868560150392 0
+83D:\Study\React Js\Parcel\Deconstructing\node_modules\lmdb\dependencies\lmdb-data-v1133777854878532384 1
+70D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\utils\src133777854886285757 1
+66D:\Study\React Js\Parcel\Deconstructing\node_modules\clone\LICENSE133777854879645700 0
+62D:\Study\React Js\Parcel\Deconstructing\node_modules\lru-cache133777867877751322 1
+105D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\features\passive-event-listener.js133777854895071355 0
+63D:\Study\React Js\Parcel\Deconstructing\node_modules\is-extglob133777854879539012 1
+100D:\Study\React Js\Parcel\Deconstructing\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\midl.h133777854889602458 0
+84D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\regions\MP.js133777854894501065 0
+96D:\Study\React Js\Parcel\Deconstructing\node_modules\@babel\types\lib\validators\validate.js.map133777867880568152 0
+64D:\Study\React Js\Parcel\Deconstructing\node_modules\safe-buffer133777854880007261 1
+97D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc\helpers\_\_async_generator\package.json133777854890682893 0
+84D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\regions\BM.js133777854886002500 0
+67D:\Study\React Js\Parcel\Deconstructing\node_modules\domelementtype133777854881011390 1
+72D:\Study\React Js\Parcel\Deconstructing\node_modules\color-name\index.js133777854878820908 0
+64D:\Study\React Js\Parcel\Deconstructing\node_modules\js-yaml\lib133777854883782661 1
+52D:\Study\React Js\Parcel\Deconstructing\package.json133777868559357645 0
 99D:\Study\React Js\Parcel\Deconstructing\node_modules\posthtml\node_modules\domutils\lib\legacy.d.ts133777854883065199 0
 129D:\Study\React Js\Parcel\Deconstructing\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\build-test.js133777854879362800 0
 73D:\Study\React Js\Parcel\Deconstructing\node_modules\import-fresh\license133777854878431229 0
@@ -93,7 +97,7 @@
 75D:\Study\React Js\Parcel\Deconstructing\node_modules\picomatch\CHANGELOG.md133777854881326608 0
 65D:\Study\React Js\Parcel\Deconstructing\node_modules\is-json\test133777854880615048 1
 92D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc\helpers\_\_tagged_template_literal133777854891728403 1
-52D:\Study\React Js\Parcel\Deconstructing\react-dom.js133777945436036532 0
+52D:\Study\React Js\Parcel\Deconstructing\react-dom.js133778508552246704 0
 71D:\Study\React Js\Parcel\Deconstructing\node_modules\node-releases\data133777854880007261 1
 58D:\Study\React Js\Parcel\Deconstructing\node_modules\clone133777854880251730 1
 75D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\plugin\LICENSE133777854878532384 0
@@ -107,6 +111,7 @@
 71D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\events\src133777854881686151 1
 75D:\Study\React Js\Parcel\Deconstructing\node_modules\dotenv-expand\tea.yaml133777854881208569 0
 79D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\graph\lib\types.js133777854883022887 0
+67D:\Study\React Js\Parcel\Deconstructing\dist\index.c41b5a0e.css.map133778518416658755 0
 87D:\Study\React Js\Parcel\Deconstructing\node_modules\htmlnano\lib\modules\minifyCss.cjs133777854882539291 0
 63D:\Study\React Js\Parcel\Deconstructing\node_modules\domhandler133777854881840377 1
 84D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\regions\MX.js133777854894667843 0
@@ -114,7 +119,7 @@
 84D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\regions\BE.js133777854885644774 0
 80D:\Study\React Js\Parcel\Deconstructing\node_modules\supports-color\package.json133777854879619350 0
 70D:\Study\React Js\Parcel\Deconstructing\node_modules\parcel\src\cli.js133777854880301884 0
-48D:\Study\React Js\Parcel\Deconstructing\react.js133777940797281097 0
+48D:\Study\React Js\Parcel\Deconstructing\react.js133778518301582411 0
 102D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\features\css-read-only-write.js133777854890923071 0
 62D:\Study\React Js\Parcel\Deconstructing\node_modules\is-number133777854879529005 1
 93D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\node-resolver-core\lib\_empty.js133777854878960397 0
@@ -152,8 +157,6 @@
 84D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc\helpers\cjs\_construct.cjs133777854884163551 0
 62D:\Study\React Js\Parcel\Deconstructing\node_modules\@mischnic133777854863919663 1
 70D:\Study\React Js\Parcel\Deconstructing\node_modules\@msgpackr-extract133777868559357645 1
-81D:\Study\React Js\Parcel\Deconstructing\node_modules\entities\lib\decode.d.ts.map133777854883965268 0
-60D:\Study\React Js\Parcel\Deconstructing\node_modules\js-yaml133777854884011004 1
 57D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc133777868559357645 1
 102D:\Study\React Js\Parcel\Deconstructing\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mtest3.c133777854886120783 0
 99D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc\helpers\cjs\_class_private_method_set.cjs133777854883782661 0
@@ -305,6 +308,8 @@
 73D:\Study\React Js\Parcel\Deconstructing\node_modules\lightningcss\LICENSE133777854878522336 0
 90D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc\helpers\cjs\_to_property_key.cjs133777854886351301 0
 64D:\Study\React Js\Parcel\Deconstructing\node_modules\htmlparser2133777854883610617 1
+81D:\Study\React Js\Parcel\Deconstructing\node_modules\entities\lib\decode.d.ts.map133777854883965268 0
+60D:\Study\React Js\Parcel\Deconstructing\node_modules\js-yaml133777854884011004 1
 81D:\Study\React Js\Parcel\Deconstructing\node_modules\cosmiconfig\dist\readFile.js133777854881890498 0
 78D:\Study\React Js\Parcel\Deconstructing\node_modules\import-fresh\package.json133777854879300667 0
 58D:\Study\React Js\Parcel\Deconstructing\node_modules\jsesc133777867877976905 1
@@ -1193,9 +1198,6 @@
 87D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\features\ruby.js133777854896505481 0
 88D:\Study\React Js\Parcel\Deconstructing\node_modules\@lmdb\lmdb-win32-x64\node.napi.node133777854883575251 0
 84D:\Study\React Js\Parcel\Deconstructing\node_modules\posthtml-render\dist\index.d.ts133777854880615048 0
-79D:\Study\React Js\Parcel\Deconstructing\node_modules\node-addon-api\except.gypi133777854879953261 0
-79D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\transformer-js\src133777854880208227 1
-76D:\Study\React Js\Parcel\Deconstructing\node_modules\posthtml-parser\license133777854878501225 0
 81D:\Study\React Js\Parcel\Deconstructing\node_modules\posthtml-parser\package.json133777854879690993 0
 100D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\src\requests\ParcelBuildRequest.js133777854889467988 0
 87D:\Study\React Js\Parcel\Deconstructing\node_modules\caniuse-lite\data\features\calc.js133777854886517415 0
@@ -2730,7 +2732,7 @@
 90D:\Study\React Js\Parcel\Deconstructing\node_modules\cosmiconfig\dist\getPropertyByPath.js133777854881208569 0
 94D:\Study\React Js\Parcel\Deconstructing\node_modules\cosmiconfig\dist\getPropertyByPath.js.map133777854883659379 0
 84D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\transformer-css\LICENSE133777854878552410 0
-66D:\Study\React Js\Parcel\Deconstructing\dist\index.7826abd7.js.map133777948266927117 0
+66D:\Study\React Js\Parcel\Deconstructing\dist\index.7826abd7.js.map133778518580372831 0
 80D:\Study\React Js\Parcel\Deconstructing\node_modules\cosmiconfig\dist\index.d.ts133777854885273046 0
 99D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\registerCoreWithSerializer.js133777854889844643 0
 86D:\Study\React Js\Parcel\Deconstructing\node_modules\@swc\helpers\_\_iterable_to_array133777854891519780 1
@@ -4185,7 +4187,7 @@
 81D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\transformer-json\src133777854879392832 1
 100D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\transformer-json\lib\JSONTransformer.js133777854878960397 0
 88D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\transformer-js\package.json133777854880818912 0
-55D:\Study\React Js\Parcel\Deconstructing\dist\index.html133777947664929720 0
+55D:\Study\React Js\Parcel\Deconstructing\dist\index.html133778504471262472 0
 99D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\transformer-js\src\esmodule-helpers.js133777854879503870 0
 96D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\transformer-js\src\JSTransformer.js133777854880557987 0
 103D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\reporter-dev-server\src\templates\500.html133777854879844643 0
@@ -4315,7 +4317,7 @@
 81D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\reporter-cli\LICENSE133777854878572404 0
 78D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\reporter-cli\test133777854881398842 1
 93D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\reporter-cli\src\bundleReport.js133777854879017209 0
-62D:\Study\React Js\Parcel\Deconstructing\dist\index.7826abd7.js133777948266862878 0
+62D:\Study\React Js\Parcel\Deconstructing\dist\index.7826abd7.js133778518580334094 0
 86D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\reporter-cli\src\emoji.js133777854881586819 0
 92D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\reporter-cli\src\phaseReport.js133777854882019489 0
 92D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\reporter-cli\lib\CLIReporter.js133777854880990806 0
@@ -4482,7 +4484,6 @@
 86D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\test\fixtures\config133777854881636039 1
 104D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\test\fixtures\config-extends-not-found133777854882516666 1
 100D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\test\fixtures\config-node-pipeline133777854880285200 1
-101D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\requests\ParcelConfigRequest.js133777854889587304 0
 103D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\test\fixtures\custom-format-infer-ext133777854890682893 1
 104D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\test\fixtures\custom-format-infer-type133777854890682893 1
 102D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\test\fixtures\custom-targets-distdir133777854890707961 1
@@ -4558,6 +4559,7 @@
 90D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\SymbolPropagation.js133777854890132783 0
 83D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\Validation.js133777854890422640 0
 100D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\requests\ParcelBuildRequest.js133777854889410832 0
+101D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\requests\ParcelConfigRequest.js133777854889587304 0
 95D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\requests\TargetRequest.js133777854890261130 0
 99D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\requests\ValidationRequest.js133777854890463483 0
 100D:\Study\React Js\Parcel\Deconstructing\node_modules\@parcel\core\lib\requests\WriteBundleRequest.js133777854890522002 0
@@ -5253,3 +5255,4 @@
 68D:\Study\React Js\Parcel\Deconstructing\node_modules\.bin\semver.cmd133777855000977012 0
 84D:\Study\React Js\Parcel\Deconstructing\node_modules\.bin\update-browserslist-db.cmd133777855000977012 0
 84D:\Study\React Js\Parcel\Deconstructing\node_modules\.bin\update-browserslist-db.ps1133777855000977012 0
+63D:\Study\React Js\Parcel\Deconstructing\dist\index.c41b5a0e.css133778518416608188 0
