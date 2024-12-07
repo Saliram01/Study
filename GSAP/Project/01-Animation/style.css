@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #212121;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#box1 {
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+}
+#box2 {
+    width: 200px;
+    height: 200px;
+    background-color: thistle;
+}
+#box3 {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+}

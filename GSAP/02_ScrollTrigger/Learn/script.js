@@ -31,7 +31,7 @@ gsap.from("#page2 h1", {
     x: 500,
     scrollTrigger: {
         trigger: "#page2 h1",
-        scroll: "body",
+        scroller: "body",
         // markers: true,
         start: "top 50%",
     }
@@ -42,7 +42,7 @@ gsap.from("#page2 h2", {
     x: -500,
     scrollTrigger: {
         trigger: "#page2 h2",
-        scroll: "body",
+        scroller: "body",
         // markers: true,
         start: "top 50%",
     }
@@ -55,7 +55,7 @@ gsap.from("#page3 #box", {
     rotate: 360,
     scrollTrigger: {
         trigger: "#page3 #box",
-        scroll: "body",
+        scroller: "body",
         markers: true,
         // start: "top 60%",
         // end: "top 30%",
