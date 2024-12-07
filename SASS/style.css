@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #0000ff;
+  --ancient-color: #ff652f;
+  --text-light: #fff;
+  --text-dark: #000;
+  --secondary-color: gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+body {
+  background-image: linear-gradient(to right, #414141, #422121);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+header h2 {
+  color: var(--text-light);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 80vh;
+}
+section b {
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 0 0 5px var(--primary-color);
+}
+
+button {
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(60deg, rgb(153, 193, 93), rgb(70, 182, 220));
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    padding: 25px 15px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  header {
+    padding: 25px 30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 25px 60px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  header {
+    padding: 25px 80px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header {
+    padding: 25px 100px;
+  }
+}/*# sourceMappingURL=style.css.map */
