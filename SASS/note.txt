@@ -1,0 +1,2 @@
+SASS -> Syntatical Awesome Style Sheet
+SCSS -> Sassy Cascading Style Sheet

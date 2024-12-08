@@ -1,0 +1,77 @@
+body {
+    background-color: #313131;
+    overflow-x: hidden;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: crimson;
+    animation: anime 5s;
+    /* animation-name: anime;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: forwards; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+
+h1::after{
+    content: ' After';
+    font-size: 18px;
+    color: yellowgreen;
+}
+h1::before{
+    content: 'Before ';
+    font-size: 18px;
+    color: violet;
+}
+
+@keyframes anime {
+    /* from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    } */
+
+    /* Or */
+0% {
+    left: 0;
+    top: 0;
+    background-color: rgb(213, 219, 224);
+}
+
+25% {
+    top: 0;
+    left: 83%;
+    background-color: green;
+}
+
+50% {
+    top: 67%;
+    right: 1%;
+    background-color: violet;
+}
+
+75% {
+    top: 67%;
+    right: 83%;
+}
+
+100% {
+    top: 0%;
+    right: 83%;
+}
+
+}
