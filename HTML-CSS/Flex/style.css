@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.flex-container {
+    gap: 10px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: violet;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+}
+
+#first {
+    margin-right: auto;
+}
