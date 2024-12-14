@@ -19,46 +19,41 @@ function CardDetail() {
     })();
   }, [param.id]);
 
+  if(data.length === 0) {
+    return <h1 className="text-2xl fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Loading...</h1>
+  }
+
   return (
     <div className="w-full h-[712px] flex justify-center items-center bg-slate-600 text-white">
-      <div className="rounded-2xl flex justify-center items-center pr-16 border">
+      <div className="sm:flex justify-center items-center rounded-xl sm:shadow sm:border shadow-white">
+
         <div className="p-8">
-          <img
-            src={
-              data.products && data.products[1]
-                ? data.products[1].thumbnail
-                : ""
-            }
-          />
+          <img src={data.products && data.products[1] ? data.products[1].thumbnail : ""} width={200} height={200}/>
         </div>
-        <div className="text-2xl">
-          <h1 className="mb-4 text-pink-400 font-semibold">
-            Title:{" "}
+
+        <div className="text-xl sm:w-[50%]">
+          <h1 className="mb-2 text-pink-400">
+            <span className="font-bold text-green-500">Title: </span>
             {data.products && data.products[1] ? data.products[1].title : ""}
           </h1>
-          <h1 className="mb-4 text-pink-400 font-semibold">
-            Price: $
+          <h1 className="mb-2 text-pink-400">
+            <span className="font-bold text-green-500">Price: </span>
             {data.products && data.products[1] ? data.products[1].price : ""}
           </h1>
-          <h1 className="mb-4 text-pink-400 font-semibold">
-            DiscountPercentage: $
-            {data.products && data.products[1]
-              ? data.products[1].discountPercentage
-              : ""}
+          <h1 className="mb-2 text-pink-400">
+            <span className="font-bold text-green-500">DiscountPercentage: </span>
+            {data.products && data.products[1] ? data.products[1].discountPercentage : ""}
           </h1>
-          <h1 className="mb-4 text-pink-400 font-semibold">
-            DiscountTotal: $
-            {data.products && data.products[1]
-              ? data.products[1].discountedTotal
-              : ""}
+          <h1 className="mb-2 text-pink-400">
+            <span className="font-bold text-green-500">TotalDiscount: </span>
+            {data.products && data.products[1] ? data.products[1].discountedTotal : ""}
           </h1>
-          <h1 className="text-pink-400 font-semibold">
-            Total: $
-            {data.products && data.products[1]
-              ? data.products[1].total
-              : ""}
+          <h1 className="text-pink-400">
+            <span className="font-bold text-green-500">Total: </span>
+            {data.products && data.products[1] ? data.products[1].total : ""}
           </h1>
         </div>
+
       </div>
     </div>
   );

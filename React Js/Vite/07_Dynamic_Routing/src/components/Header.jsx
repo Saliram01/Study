@@ -12,14 +12,14 @@ function Header() {
       <div className="flex h-16 w-full max-w-[1400px] m-auto px-4 justify-center items-center">
 
         <NavLink to={'/'} className="mr-auto text-xl font-bold"><h2 >Products</h2></NavLink>
-        <ul className="hidden sm:flex justify-center items-center gap-14 font-semibold">
 
-          <div className={`${show == 'isActive' ? 'block' : 'hidden'}`}>
+        <div >
             <input type="text" 
-            className="border rounded-full w-full max-w-48 px-3 py-1 outline-yellow-600 text-gray-500" placeholder="Search" 
+            className="border rounded-full w-full max-w-32 mx-6 px-3 py-1 outline-yellow-600 text-gray-500" placeholder="Search" 
             onChange={(e) => setSearch(e.target.value.toLocaleLowerCase())}/>
           </div>
 
+        <ul className="hidden sm:flex justify-center items-center gap-8 font-semibold">
           <NavLink onClick={()=> setShow('Active')} className={({isActive}) => `${isActive ? 'text-green-400' : ''}`} to={'/'}> <li>Home</li> </NavLink>
           <NavLink onClick={()=> setShow('Active')} className={({isActive}) => `${isActive ? 'text-green-400' : ''}`} to={'about'}> <li>About</li> </NavLink>
           <NavLink onClick={()=> setShow('Active')} className={({isActive}) => `${isActive ? 'text-green-400' : ''}`} to={'blogs'}> <li>Blogs</li> </NavLink>
