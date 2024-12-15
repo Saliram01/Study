@@ -3,8 +3,8 @@ import AboutSkill from './AboutSkill';
 
 function About() {
   return (
-    <div className='flex justify-center items-center h-screen'>
-        <div className="w-[85%] h-[650px] rounded-lg flex justify-center items-center">
+    <div className='flex justify-center items-center h-[90vh]'>
+        <div className="w-[85%] rounded-lg flex justify-center items-center">
             <div className="w-[50%] px-12">
                 <div className="px-8">
                   <h1 className='text-2xl font-bold text-gray-400 mb-6'>ABOUT ME</h1>
@@ -14,12 +14,13 @@ function About() {
                     <AboutSkill title="#React"/>
                     <AboutSkill title="#Html"/>
                     <AboutSkill title="#CSS"/>
-                    <AboutSkill title="#Next.js"/>
                     <AboutSkill title="#Java"/>
-                    <AboutSkill title="#Spring Boot"/>
+                    <AboutSkill title="#SASS"/>
                     <AboutSkill title="#Bootstrap"/>
                     <AboutSkill title="#Tailwind"/>
                     <AboutSkill title="#Figma"/>
+                    <AboutSkill title="#Github"/>
+                    <AboutSkill title="#Netlify"/>
                   </ul>
                 </div>
                 <div className="my-12 px-8">
