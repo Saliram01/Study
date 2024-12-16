@@ -1,0 +1,15 @@
+{
+    "name": "Dad jokes",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "Random Shown Dad Jokes Clicked On Pined Icon Of Dad jokes",
+    "permissions": ["activeTab"],
+    
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "logo.png"
+    },
+    "icons": {
+        "128": "logo.png"
+    }
+}

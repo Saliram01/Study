@@ -1,0 +1,26 @@
+{
+    "name": "Color Picker",
+    "version": "0.0.1",
+    "description": "Color picker helps to pick color from page",
+    "manifest_version": 3,
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "action": {
+        "default_popup": "picker.html"
+    },
+
+    "icons": {
+        "128": "picker.png"
+    },
+
+    "options_page": "options.html",
+
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ]
+}
