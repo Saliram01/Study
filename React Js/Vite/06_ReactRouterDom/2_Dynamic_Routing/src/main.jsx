@@ -1,14 +1,20 @@
-import { StrictMode } from 'react'
+import { lazy, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import Container from './components/Container'
 import Home from './components/Home.jsx'
 import Context from './context/Context'
-import CardDetail from './components/CardDetail.jsx'
-import About from './components/About'
-import Blogs from './components/Blogs'
+
+// import CardDetail from './components/CardDetail.jsx'
+// import Container from './components/Container'
+// import About from './components/About'
+// import Blogs from './components/Blogs'
+
+const About = lazy(() => import('./components/About'));
+const Blogs = lazy(() => import('./components/Blogs'));
+const Container = lazy(() => import('./components/Container'));
+const CardDetail = lazy(() => import('./components/CardDetail'));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
