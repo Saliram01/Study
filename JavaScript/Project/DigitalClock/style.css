@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background-color: #535353;
+}
+
+.container {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+span {
+    width: 30px;
+    height: 25px;
+    background-color: rgb(111, 150, 32);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
