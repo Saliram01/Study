@@ -7,7 +7,22 @@
 </head>
 <body style="background-color: #515151;">
     <script>
-        const str = "Saliram";
+        const str = "SALIRAM";
+        const vowels = 'aeiou';
+
+        let vowel = []
+        let consonant = []
+
+        for(const char of str.toLowerCase()) {
+            if(vowels.includes(char)) {
+                vowel.push(char)
+            } else if(char.match(/[a-z]/)) {
+                consonant.push(char);
+            }
+        }
+
+        console.log(vowel.join(''))
+        console.log(consonant.join(''))
 
     </script>
 </body>
