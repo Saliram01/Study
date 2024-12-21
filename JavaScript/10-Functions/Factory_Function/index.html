@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Function</title>
+</head>
+
+<body style="background-color: #545454; color: #fff;">
+
+    <h1 style="text-align: center;">Factory Function</h1>
+    <p style="text-align: center;">
+        Factory function is a regular function which return an object. <br>
+        Factory function are flexible don't require the new keyword and include private variable and methods.
+    </p>
+
+    <script>
+        function factoryFunc(name, age) {
+            return {
+                name,
+                age,
+                greet() {
+                    console.log(`My name is ${name} and i'm ${age} years old.`);
+                }
+            }
+        }
+        const person1 = factoryFunc('Saliram',23);
+        const person2 = factoryFunc('Sushil',24);
+
+        person1.greet(); // Output: My name is Saliran and i'm 23 years old.
+        person2.greet(); // Output: My name is Sushil and i'm 24 years old.
+         
+    </script>
+</body>
+
+</html>
