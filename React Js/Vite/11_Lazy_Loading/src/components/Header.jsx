@@ -3,11 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function Header() {
   return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-    }}>
+    <div className='header'>
       <h2>Lazy Load</h2>
       <ul style={{
         display: 'flex',

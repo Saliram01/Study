@@ -1,3 +1,15 @@
 .active {
     color: yellowgreen;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    border-radius: 100px;
+    padding: 0 20px;
+}
