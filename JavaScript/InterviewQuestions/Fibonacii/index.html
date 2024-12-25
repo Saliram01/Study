@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fibonacii Series</title>
 </head>
+
 <body style="background-color: #515151;">
     <script>
-        const num = 6;
+        // const num = 6;
+        // let a = 0;
+        // let b = 1;
+        // let c = 2;
+        // for(let i = 0; i <= num; i++) {
+        //     console.log(a); // 0 , 1 , 1 , 2, 3 ,5 , 8
+        //     c = a + b;
+        //     a = b;
+        //     b = c;
+        // }
+
         let a = 0;
         let b = 1;
         let c = 2;
-        for(let i = 0; i <= num; i++) {
-            console.log(a); // 0 , 1 , 1 , 2, 3 ,5 , 8
-            c = a + b;
-            a = b;
-            b = c;
+        function Fibo(num) {
+            for (let i = 0; i <= num; i++) {
+                console.log(a)
+                c = a + b;
+                a = b;
+                b = c;
+            }
         }
+        Fibo(6)
     </script>
 </body>
+
 </html>
