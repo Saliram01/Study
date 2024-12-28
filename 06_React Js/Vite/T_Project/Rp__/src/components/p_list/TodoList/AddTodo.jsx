@@ -22,7 +22,7 @@ function AddTodo({addList}) {
     }
 
   return (
-    <div className='w-[400px]'>
+    <div>
         <input type="text" value={userText} placeholder='Add todo list...' className="border-2 border-slate-400 w-full p-2 rounded-md outline-orange-400 " onChange={(e) => setUserText(e.target.value)} onKeyDown={onKeyHandler}/>
         <div className="my-3 space-x-2">
             <button className={`${userText ? 'bg-blue-600' : ''} h-[35px] px-3 bg-gray-400 text-white rounded-md`} onClick={handleAdd}>Submit</button>

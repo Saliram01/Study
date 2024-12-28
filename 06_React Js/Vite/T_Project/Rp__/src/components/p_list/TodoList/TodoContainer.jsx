@@ -14,7 +14,7 @@ function TodoContainer() {
         setItems(() => litems.filter((list) => list !== el));
     }
 
-    return <div className='flex items-center flex-col h-[550px] border'>
+    return <div className='flex items-center flex-col px-1 h-[550px] border'>
         <TodoTitle title="Todo_List"/>
         <div className="shadow-md border p-4 rounded-lg">
             <AddTodo addList={addList}/>
