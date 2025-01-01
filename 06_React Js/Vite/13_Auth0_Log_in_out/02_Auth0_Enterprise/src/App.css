@@ -1,0 +1,47 @@
+header {
+  box-shadow: 0 0 5px;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.login , .logout {
+  padding: 5px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.children-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.user-details {
+  box-shadow: 0 0 8px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.active {
+  color: lightskyblue;
+}
