@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Context_Authenticate } from '../contex_auth/Authenticate'
 
 function Login() {
-const {loginWithRedirect , isAuthenticate} = useContext(Context_Authenticate);
+const {loginWithRedirect } = useContext(Context_Authenticate);
 
   return (
     <div>

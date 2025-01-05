@@ -24,8 +24,8 @@ const routing = createBrowserRouter(
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Auth0Provider
-      domain="dev-dwjkvzrsshk827sy.us.auth0.com"
-      clientId="z00m3kjtm1sgQDlKmh7h08KAIijZKwPN"
+      domain=""
+      clientId=""
       authorizationParams={{ redirect_uri: window.location.origin }}
     >
       <Authenticate>
