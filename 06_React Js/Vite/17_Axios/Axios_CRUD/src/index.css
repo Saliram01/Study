@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #636363;
+}
+
+ol li {
+  list-style-type: none;
+  box-shadow: 0 0 1px #fff;
+  padding: 20px;
+  margin: 25px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+ol li:hover {
+  box-shadow: 0 0 4px #fff;
+}
+
+ol li button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+ol li button:hover {
+  background-color: #919191;
+}
+
+strong {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+p {
+  margin: 10px 0;
+}
