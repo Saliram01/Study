@@ -2,11 +2,11 @@ import React from "react";
 import { useQuery , gql} from "@apollo/client";
 
 const API_DATA = gql`
-  query TodosData {
-    getTodo {
+  query getUsers {
+    getUsers {
       id
-      title
-      completed
+      name
+      email
     }
   }
 `;
@@ -33,14 +33,19 @@ function App() {
     <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap',flexDirection: 'column', gap: '20px', margin: '10px'}}>
       <h2>Server Data</h2>
         {
-          data.getTodo.map((list) => <li key={list.id} style={{
+          data.getUsers.map((list) => <div key={list.id} style={{
             listStyleType: 'none',
             boxShadow: '0 0 5px #fff',
             borderRadius: '50px',
             width: '80%',
             textAlign: 'center',
             padding: '10px'
-          }}>{list.title}</li>)
+          }}>
+            <ul>
+              <li>{list.name}</li>
+              <li>{list.email}</li>
+            </ul>
+          </div>)
         }
     </div>
   </>

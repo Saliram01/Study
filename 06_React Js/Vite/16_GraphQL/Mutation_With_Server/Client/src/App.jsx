@@ -11,9 +11,9 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     addUser({ variables: { name, email } })
-      .then((res) => {
-        console.log(`User Name: ${res.data.addUser.name}`);
-        console.log(`User Email: ${res.data.addUser.email}`);
+      .then(() => {
+        // console.log(`User Name: ${res.data.addUser.name}`);
+        // console.log(`User Email: ${res.data.addUser.email}`);
         setName("");
         setEmail("");
       })

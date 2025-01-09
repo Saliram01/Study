@@ -23,22 +23,22 @@ async function serverStart() {
     const app = express();
     const server = new ApolloServer({
         typeDefs: `
-            type Todo {
+            type Users {
                 id: ID!
-                title: String!
-                completed: Boolean
+                name: String!
+                email: String!
             }
 
             type Query {
-                getTodo : [Todo]
+                getUsers : [Users]
             }
         `,
 
         resolvers : {
             Query: {
-                getTodo : async () => {
+                getUsers : async () => {
                     try {
-                        return (await axios.get('https://jsonplaceholder.typicode.com/todos')).data 
+                        return (await axios.get('https://jsonplaceholder.typicode.com/users')).data 
                     }
                     catch(error) {
                         console.error("Error: ", error);
