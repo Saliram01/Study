@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "url": "^0.11.4"
+  },
+  "name": "07_http_methods",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

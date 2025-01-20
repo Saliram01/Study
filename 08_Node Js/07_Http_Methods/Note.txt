@@ -1,0 +1,5 @@
+GET  -> Used to get data from server
+POST -> Used to send data to the server. eg: from
+PUT  -> Used for upload images , profile images , attach images
+PATCH -> Used for edit , update , chnage
+Delete -> Used for delete data
